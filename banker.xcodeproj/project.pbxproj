@@ -49,6 +49,10 @@
 		DAA0D50F1ECA4308007EDAE5 /* VHomeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */; };
 		DAA0D5111ECA506B007EDAE5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D5101ECA506B007EDAE5 /* generic.xcassets */; };
 		DAA0D5131ECA58AE007EDAE5 /* MHomeMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5121ECA58AE007EDAE5 /* MHomeMovement.swift */; };
+		DAA0D5151ECA6BC4007EDAE5 /* MHomeBudgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5141ECA6BC4007EDAE5 /* MHomeBudgets.swift */; };
+		DAA0D5171ECA6BCE007EDAE5 /* MHomeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5161ECA6BCE007EDAE5 /* MHomeSettings.swift */; };
+		DAA0D5191ECA6BDC007EDAE5 /* MHomeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5181ECA6BDC007EDAE5 /* MHomeChart.swift */; };
+		DAA0D51B1ECA6CA0007EDAE5 /* MHomeCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D51A1ECA6CA0007EDAE5 /* MHomeCalendar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +99,10 @@
 		DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeBackground.swift; sourceTree = "<group>"; };
 		DAA0D5101ECA506B007EDAE5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 		DAA0D5121ECA58AE007EDAE5 /* MHomeMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeMovement.swift; sourceTree = "<group>"; };
+		DAA0D5141ECA6BC4007EDAE5 /* MHomeBudgets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeBudgets.swift; sourceTree = "<group>"; };
+		DAA0D5161ECA6BCE007EDAE5 /* MHomeSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeSettings.swift; sourceTree = "<group>"; };
+		DAA0D5181ECA6BDC007EDAE5 /* MHomeChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeChart.swift; sourceTree = "<group>"; };
+		DAA0D51A1ECA6CA0007EDAE5 /* MHomeCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeCalendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +226,10 @@
 				DAA0D4C91ECA2515007EDAE5 /* MHome.swift */,
 				DAA0D4CA1ECA2515007EDAE5 /* MHomeProtocol.swift */,
 				DAA0D5121ECA58AE007EDAE5 /* MHomeMovement.swift */,
+				DAA0D5141ECA6BC4007EDAE5 /* MHomeBudgets.swift */,
+				DAA0D5161ECA6BCE007EDAE5 /* MHomeSettings.swift */,
+				DAA0D5181ECA6BDC007EDAE5 /* MHomeChart.swift */,
+				DAA0D51A1ECA6CA0007EDAE5 /* MHomeCalendar.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -362,6 +374,8 @@
 				DAA0D5011ECA2515007EDAE5 /* VCollectionFlow.swift in Sources */,
 				DAA0D4F61ECA2515007EDAE5 /* MHomeProtocol.swift in Sources */,
 				DAA0D50B1ECA3C5B007EDAE5 /* VHomeMenu.swift in Sources */,
+				DAA0D5191ECA6BDC007EDAE5 /* MHomeChart.swift in Sources */,
+				DAA0D5151ECA6BC4007EDAE5 /* MHomeBudgets.swift in Sources */,
 				DAA0D4EA1ECA2515007EDAE5 /* ExtensionFileManager.swift in Sources */,
 				DAA0D4FA1ECA2515007EDAE5 /* VHome.swift in Sources */,
 				DAA0D4E51ECA2515007EDAE5 /* CParent.swift in Sources */,
@@ -385,8 +399,10 @@
 				DAA0D4EF1ECA2515007EDAE5 /* ExtensionString.swift in Sources */,
 				DAA0D50F1ECA4308007EDAE5 /* VHomeBackground.swift in Sources */,
 				DAA0D4ED1ECA2515007EDAE5 /* ExtensionNSLayoutConstraint.swift in Sources */,
+				DAA0D5171ECA6BCE007EDAE5 /* MHomeSettings.swift in Sources */,
 				DAA0D5001ECA2515007EDAE5 /* VCollection.swift in Sources */,
 				DAA0D5041ECA2515007EDAE5 /* VSpinner.swift in Sources */,
+				DAA0D51B1ECA6CA0007EDAE5 /* MHomeCalendar.swift in Sources */,
 				DAA0D4F01ECA2515007EDAE5 /* ExtensionUICollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

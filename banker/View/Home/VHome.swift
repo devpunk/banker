@@ -6,8 +6,8 @@ class VHome:VView
     private weak var viewBar:VHomeBar!
     private weak var viewMenu:VHomeMenu!
     private weak var layoutBarTop:NSLayoutConstraint!
-    private let kBarHeight:CGFloat = 165
-    private let kMenuHeight:CGFloat = 50
+    private let kBarHeight:CGFloat = 170
+    private let kMenuHeight:CGFloat = 60
     
     override init(controller:CController)
     {
