@@ -8,6 +8,7 @@ class VHomeBar:UIView
     private let kBalanceHeight:CGFloat = 40
     private let kBalanceBottom:CGFloat = -10
     private let kLabelMargin:CGFloat = 10
+    private let kImageHeight:CGFloat = 110
     
     init(controller:CHome)
     {
@@ -21,6 +22,9 @@ class VHomeBar:UIView
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = #imageLiteral(resourceName: "assetGenericLogo")
+        imageView.contentMode = UIViewContentMode.center
+        imageView.clipsToBounds = true
         
         let labelTitle:UILabel = UILabel()
         labelTitle.isUserInteractionEnabled = false
@@ -41,6 +45,7 @@ class VHomeBar:UIView
         
         addSubview(labelTitle)
         addSubview(labelBalance)
+        addSubview(imageView)
         
         NSLayoutConstraint.bottomToBottom(
             view:labelBalance,
@@ -64,6 +69,16 @@ class VHomeBar:UIView
             view:labelTitle,
             toView:self,
             margin:kLabelMargin)
+        
+        NSLayoutConstraint.topToTop(
+            view:imageView,
+            toView:self)
+        NSLayoutConstraint.height(
+            view:imageView,
+            constant:kImageHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:imageView,
+            toView:self)
     }
     
     required init?(coder:NSCoder)
