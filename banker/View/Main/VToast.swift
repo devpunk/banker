@@ -11,12 +11,12 @@ class VToast:UIView
     
     class func messageRed(message:String)
     {
-        VToast.message(message:message, color:UIColor.tlaxRed)
+        VToast.message(message:message, color:UIColor.bankerOrange)
     }
     
     class func messageBlue(message:String)
     {
-        VToast.message(message:message, color:UIColor.tlaxBlue)
+        VToast.message(message:message, color:UIColor.bankerBlue)
     }
     
     private class func message(message:String, color:UIColor)

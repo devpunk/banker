@@ -12,12 +12,12 @@ class VAlert:UIView
     
     class func messageRed(message:String)
     {
-        VAlert.message(message:message, color:UIColor.tlaxRed)
+        VAlert.message(message:message, color:UIColor.bankerOrange)
     }
     
     class func messageBlue(message:String)
     {
-        VAlert.message(message:message, color:UIColor.tlaxBlue)
+        VAlert.message(message:message, color:UIColor.bankerBlue)
     }
     
     private class func message(message:String, color:UIColor)

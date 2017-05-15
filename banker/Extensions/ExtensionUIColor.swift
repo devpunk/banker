@@ -14,6 +14,18 @@ extension UIColor
         }
     }
     
+    open class var bankerWhite:UIColor //#EFEFEF
+    {
+        get
+        {
+            return UIColor(
+                red:0.937254901960784,
+                green:0.937254901960784,
+                blue:0.937254901960784,
+                alpha:1)
+        }
+    }
+    
     open class var bankerBlue:UIColor //#BDD4DE
     {
         get

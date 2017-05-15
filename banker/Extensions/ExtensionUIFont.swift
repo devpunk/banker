@@ -11,4 +11,9 @@ extension UIFont
     {
         return UIFont(name:"Arial-BoldMT", size:size)!
     }
+    
+    class func numeric(size:CGFloat) -> UIFont
+    {
+        return UIFont(name:"Menlo-Regular", size:size)!
+    }
 }

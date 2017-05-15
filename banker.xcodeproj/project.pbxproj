@@ -33,7 +33,6 @@
 		DAA0D4F91ECA2515007EDAE5 /* ResourceURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4D01ECA2515007EDAE5 /* ResourceURL.plist */; };
 		DAA0D4FA1ECA2515007EDAE5 /* VHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4D31ECA2515007EDAE5 /* VHome.swift */; };
 		DAA0D4FB1ECA2515007EDAE5 /* VHomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4D41ECA2515007EDAE5 /* VHomeBar.swift */; };
-		DAA0D4FC1ECA2515007EDAE5 /* VHomeBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4D51ECA2515007EDAE5 /* VHomeBarCell.swift */; };
 		DAA0D4FD1ECA2515007EDAE5 /* VAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4D71ECA2515007EDAE5 /* VAlert.swift */; };
 		DAA0D4FE1ECA2515007EDAE5 /* VBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4D81ECA2515007EDAE5 /* VBlur.swift */; };
 		DAA0D4FF1ECA2515007EDAE5 /* VBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4D91ECA2515007EDAE5 /* VBorder.swift */; };
@@ -75,7 +74,6 @@
 		DAA0D4D01ECA2515007EDAE5 /* ResourceURL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ResourceURL.plist; sourceTree = "<group>"; };
 		DAA0D4D31ECA2515007EDAE5 /* VHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHome.swift; sourceTree = "<group>"; };
 		DAA0D4D41ECA2515007EDAE5 /* VHomeBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeBar.swift; sourceTree = "<group>"; };
-		DAA0D4D51ECA2515007EDAE5 /* VHomeBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeBarCell.swift; sourceTree = "<group>"; };
 		DAA0D4D71ECA2515007EDAE5 /* VAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VAlert.swift; sourceTree = "<group>"; };
 		DAA0D4D81ECA2515007EDAE5 /* VBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VBlur.swift; sourceTree = "<group>"; };
 		DAA0D4D91ECA2515007EDAE5 /* VBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VBorder.swift; sourceTree = "<group>"; };
@@ -243,7 +241,6 @@
 			children = (
 				DAA0D4D31ECA2515007EDAE5 /* VHome.swift */,
 				DAA0D4D41ECA2515007EDAE5 /* VHomeBar.swift */,
-				DAA0D4D51ECA2515007EDAE5 /* VHomeBarCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -348,7 +345,6 @@
 				DAA0D4F51ECA2515007EDAE5 /* MHome.swift in Sources */,
 				DAA0D5011ECA2515007EDAE5 /* VCollectionFlow.swift in Sources */,
 				DAA0D4F61ECA2515007EDAE5 /* MHomeProtocol.swift in Sources */,
-				DAA0D4FC1ECA2515007EDAE5 /* VHomeBarCell.swift in Sources */,
 				DAA0D4EA1ECA2515007EDAE5 /* ExtensionFileManager.swift in Sources */,
 				DAA0D4FA1ECA2515007EDAE5 /* VHome.swift in Sources */,
 				DAA0D4E51ECA2515007EDAE5 /* CParent.swift in Sources */,
