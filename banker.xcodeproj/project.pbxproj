@@ -47,6 +47,7 @@
 		DAA0D50B1ECA3C5B007EDAE5 /* VHomeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */; };
 		DAA0D50D1ECA3DEF007EDAE5 /* VHomeMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */; };
 		DAA0D50F1ECA4308007EDAE5 /* VHomeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */; };
+		DAA0D5111ECA506B007EDAE5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D5101ECA506B007EDAE5 /* generic.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeMenu.swift; sourceTree = "<group>"; };
 		DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeMenuCell.swift; sourceTree = "<group>"; };
 		DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeBackground.swift; sourceTree = "<group>"; };
+		DAA0D5101ECA506B007EDAE5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */,
+				DAA0D5101ECA506B007EDAE5 /* generic.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				DAA0D4F41ECA2515007EDAE5 /* Info.plist in Resources */,
 				DAA0D4F81ECA2515007EDAE5 /* Localizable.strings in Resources */,
 				DAA0D4F91ECA2515007EDAE5 /* ResourceURL.plist in Resources */,
+				DAA0D5111ECA506B007EDAE5 /* generic.xcassets in Resources */,
 				DAA0D4E11ECA2515007EDAE5 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
