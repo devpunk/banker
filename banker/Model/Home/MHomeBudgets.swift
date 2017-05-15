@@ -6,7 +6,7 @@ class MHomeBudgets:MHomeProtocol
     {
         get
         {
-            return #imageLiteral(resourceName: "assetGenericAdd")
+            return #imageLiteral(resourceName: "assetGenericBudget")
         }
     }
     

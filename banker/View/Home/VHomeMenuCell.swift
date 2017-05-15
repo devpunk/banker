@@ -50,11 +50,11 @@ class VHomeMenuCell:UICollectionViewCell
     {
         if isSelected || isHighlighted
         {
-            backgroundColor = UIColor(white:1, alpha:0.3)
+            imageView.tintColor = UIColor.bankerOrange
         }
         else
         {
-            backgroundColor = UIColor.clear
+            imageView.tintColor = UIColor.white
         }
     }
     
@@ -62,7 +62,7 @@ class VHomeMenuCell:UICollectionViewCell
     
     func config(model:MHomeProtocol)
     {
-        imageView.image = model.image
+        imageView.image = model.image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         hover()
     }
 }
