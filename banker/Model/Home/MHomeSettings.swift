@@ -1,9 +1,17 @@
-//
-//  MHomeSettings.swift
-//  banker
-//
-//  Created by zero on 5/15/17.
-//  Copyright © 2017 iturbide. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class MHomeSettings:MHomeProtocol
+{
+    var image:UIImage
+    {
+        get
+        {
+            return #imageLiteral(resourceName: "assetGenericAdd")
+        }
+    }
+    
+    func selected(controller:CHome)
+    {
+        
+    }
+}
