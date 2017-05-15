@@ -2,26 +2,38 @@ import UIKit
 
 extension UIColor
 {
-    open class var tlaxRed:UIColor //#008CC8
+    open class var bankerGray:UIColor //#3F5765
     {
         get
         {
             return UIColor(
-                red:0,
-                green:0.549019607843137,
-                blue:0.784313725490196,
+                red:0.247058823529412,
+                green:0.341176470588235,
+                blue:0.396078431372549,
                 alpha:1)
         }
     }
     
-    open class var tlaxBlue:UIColor //#FFB400
+    open class var bankerBlue:UIColor //#BDD4DE
+    {
+        get
+        {
+            return UIColor(
+                red:0.741176470588235,
+                green:0.831372549019608,
+                blue:0.870588235294118,
+                alpha:1)
+        }
+    }
+    
+    open class var bankerOrange:UIColor //#FF530D
     {
         get
         {
             return UIColor(
                 red:1,
-                green:0.705882352941176,
-                blue:0,
+                green:0.325490196078431,
+                blue:0.050980392156863,
                 alpha:1)
         }
     }
