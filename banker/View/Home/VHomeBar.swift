@@ -13,8 +13,9 @@ class VHomeBar:UIView
     {
         super.init(frame:CGRect.zero)
         clipsToBounds = true
-        backgroundColor = UIColor.bankerGray
+        backgroundColor = UIColor.clear
         translatesAutoresizingMaskIntoConstraints = false
+        isUserInteractionEnabled = false
         self.controller = controller
         
         let labelTitle:UILabel = UILabel()

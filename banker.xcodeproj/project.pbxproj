@@ -46,6 +46,7 @@
 		DAA0D5091ECA2697007EDAE5 /* DBanker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5071ECA2697007EDAE5 /* DBanker.xcdatamodeld */; };
 		DAA0D50B1ECA3C5B007EDAE5 /* VHomeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */; };
 		DAA0D50D1ECA3DEF007EDAE5 /* VHomeMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */; };
+		DAA0D50F1ECA4308007EDAE5 /* VHomeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		DAA0D5081ECA2697007EDAE5 /* DBanker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBanker.xcdatamodel; sourceTree = "<group>"; };
 		DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeMenu.swift; sourceTree = "<group>"; };
 		DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeMenuCell.swift; sourceTree = "<group>"; };
+		DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA0D4D31ECA2515007EDAE5 /* VHome.swift */,
+				DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */,
 				DAA0D4D41ECA2515007EDAE5 /* VHomeBar.swift */,
 				DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */,
 				DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */,
@@ -372,6 +375,7 @@
 				DAA0D5061ECA2515007EDAE5 /* VView.swift in Sources */,
 				DAA0D4FD1ECA2515007EDAE5 /* VAlert.swift in Sources */,
 				DAA0D4EF1ECA2515007EDAE5 /* ExtensionString.swift in Sources */,
+				DAA0D50F1ECA4308007EDAE5 /* VHomeBackground.swift in Sources */,
 				DAA0D4ED1ECA2515007EDAE5 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DAA0D5001ECA2515007EDAE5 /* VCollection.swift in Sources */,
 				DAA0D5041ECA2515007EDAE5 /* VSpinner.swift in Sources */,
