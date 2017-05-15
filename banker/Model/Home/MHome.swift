@@ -6,6 +6,9 @@ class MHome
     
     init()
     {
-        items = []
+        let itemMovement:MHomeMovement = MHomeMovement()
+        
+        items = [
+            itemMovement]
     }
 }

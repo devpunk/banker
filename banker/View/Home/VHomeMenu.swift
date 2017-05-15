@@ -17,4 +17,11 @@ class VHomeMenu:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
     {
         return nil
     }
+    
+    //MARK: collectionView delegate
+    
+    func numberOfSections(in collectionView:UICollectionView) -> Int
+    {
+        return 1
+    }
 }
