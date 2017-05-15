@@ -14,7 +14,6 @@
 		DAA0D4E51ECA2515007EDAE5 /* CParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B41ECA2515007EDAE5 /* CParent.swift */; };
 		DAA0D4E61ECA2515007EDAE5 /* DManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B61ECA2515007EDAE5 /* DManager.swift */; };
 		DAA0D4E71ECA2515007EDAE5 /* DSettingsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B71ECA2515007EDAE5 /* DSettingsExtension.swift */; };
-		DAA0D4E81ECA2515007EDAE5 /* DTlaxcala.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B81ECA2515007EDAE5 /* DTlaxcala.xcdatamodeld */; };
 		DAA0D4E91ECA2515007EDAE5 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4BB1ECA2515007EDAE5 /* ExtensionDictionary.swift */; };
 		DAA0D4EA1ECA2515007EDAE5 /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4BC1ECA2515007EDAE5 /* ExtensionFileManager.swift */; };
 		DAA0D4EB1ECA2515007EDAE5 /* ExtensionMKAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4BD1ECA2515007EDAE5 /* ExtensionMKAnnotationView.swift */; };
@@ -45,6 +44,7 @@
 		DAA0D5041ECA2515007EDAE5 /* VSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4DE1ECA2515007EDAE5 /* VSpinner.swift */; };
 		DAA0D5051ECA2515007EDAE5 /* VToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4DF1ECA2515007EDAE5 /* VToast.swift */; };
 		DAA0D5061ECA2515007EDAE5 /* VView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4E01ECA2515007EDAE5 /* VView.swift */; };
+		DAA0D5091ECA2697007EDAE5 /* DBanker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5071ECA2697007EDAE5 /* DBanker.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +56,6 @@
 		DAA0D4B41ECA2515007EDAE5 /* CParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CParent.swift; sourceTree = "<group>"; };
 		DAA0D4B61ECA2515007EDAE5 /* DManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DManager.swift; sourceTree = "<group>"; };
 		DAA0D4B71ECA2515007EDAE5 /* DSettingsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSettingsExtension.swift; sourceTree = "<group>"; };
-		DAA0D4B91ECA2515007EDAE5 /* DTlaxcala.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DTlaxcala.xcdatamodel; sourceTree = "<group>"; };
 		DAA0D4BB1ECA2515007EDAE5 /* ExtensionDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDictionary.swift; sourceTree = "<group>"; };
 		DAA0D4BC1ECA2515007EDAE5 /* ExtensionFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionFileManager.swift; sourceTree = "<group>"; };
 		DAA0D4BD1ECA2515007EDAE5 /* ExtensionMKAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionMKAnnotationView.swift; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		DAA0D4DE1ECA2515007EDAE5 /* VSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSpinner.swift; sourceTree = "<group>"; };
 		DAA0D4DF1ECA2515007EDAE5 /* VToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VToast.swift; sourceTree = "<group>"; };
 		DAA0D4E01ECA2515007EDAE5 /* VView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VView.swift; sourceTree = "<group>"; };
+		DAA0D5081ECA2697007EDAE5 /* DBanker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBanker.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +171,7 @@
 			children = (
 				DAA0D4B61ECA2515007EDAE5 /* DManager.swift */,
 				DAA0D4B71ECA2515007EDAE5 /* DSettingsExtension.swift */,
-				DAA0D4B81ECA2515007EDAE5 /* DTlaxcala.xcdatamodeld */,
+				DAA0D5071ECA2697007EDAE5 /* DBanker.xcdatamodeld */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -344,7 +344,6 @@
 				DAA0D4E71ECA2515007EDAE5 /* DSettingsExtension.swift in Sources */,
 				DAA0D4FB1ECA2515007EDAE5 /* VHomeBar.swift in Sources */,
 				DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */,
-				DAA0D4E81ECA2515007EDAE5 /* DTlaxcala.xcdatamodeld in Sources */,
 				DAA0D4EE1ECA2515007EDAE5 /* ExtensionNSManagedObject.swift in Sources */,
 				DAA0D4F51ECA2515007EDAE5 /* MHome.swift in Sources */,
 				DAA0D5011ECA2515007EDAE5 /* VCollectionFlow.swift in Sources */,
@@ -357,6 +356,7 @@
 				DAA0D4FE1ECA2515007EDAE5 /* VBlur.swift in Sources */,
 				DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */,
 				DAA0D4FF1ECA2515007EDAE5 /* VBorder.swift in Sources */,
+				DAA0D5091ECA2697007EDAE5 /* DBanker.xcdatamodeld in Sources */,
 				DAA0D4E41ECA2515007EDAE5 /* CController.swift in Sources */,
 				DAA0D4E91ECA2515007EDAE5 /* ExtensionDictionary.swift in Sources */,
 				DAA0D4F21ECA2515007EDAE5 /* ExtensionUIFont.swift in Sources */,
@@ -534,13 +534,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		DAA0D4B81ECA2515007EDAE5 /* DTlaxcala.xcdatamodeld */ = {
+		DAA0D5071ECA2697007EDAE5 /* DBanker.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				DAA0D4B91ECA2515007EDAE5 /* DTlaxcala.xcdatamodel */,
+				DAA0D5081ECA2697007EDAE5 /* DBanker.xcdatamodel */,
 			);
-			currentVersion = DAA0D4B91ECA2515007EDAE5 /* DTlaxcala.xcdatamodel */;
-			path = DTlaxcala.xcdatamodeld;
+			currentVersion = DAA0D5081ECA2697007EDAE5 /* DBanker.xcdatamodel */;
+			path = DBanker.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
