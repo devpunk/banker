@@ -45,6 +45,7 @@
 		DAA0D5061ECA2515007EDAE5 /* VView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4E01ECA2515007EDAE5 /* VView.swift */; };
 		DAA0D5091ECA2697007EDAE5 /* DBanker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5071ECA2697007EDAE5 /* DBanker.xcdatamodeld */; };
 		DAA0D50B1ECA3C5B007EDAE5 /* VHomeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */; };
+		DAA0D50D1ECA3DEF007EDAE5 /* VHomeMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		DAA0D4E01ECA2515007EDAE5 /* VView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VView.swift; sourceTree = "<group>"; };
 		DAA0D5081ECA2697007EDAE5 /* DBanker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBanker.xcdatamodel; sourceTree = "<group>"; };
 		DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeMenu.swift; sourceTree = "<group>"; };
+		DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeMenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				DAA0D4D31ECA2515007EDAE5 /* VHome.swift */,
 				DAA0D4D41ECA2515007EDAE5 /* VHomeBar.swift */,
 				DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */,
+				DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				DAA0D4EC1ECA2515007EDAE5 /* ExtensionNotification.swift in Sources */,
 				DAA0D4F11ECA2515007EDAE5 /* ExtensionUIColor.swift in Sources */,
 				DAA0D4F31ECA2515007EDAE5 /* ExtensionURL.swift in Sources */,
+				DAA0D50D1ECA3DEF007EDAE5 /* VHomeMenuCell.swift in Sources */,
 				DAA0D4EB1ECA2515007EDAE5 /* ExtensionMKAnnotationView.swift in Sources */,
 				DAA0D5051ECA2515007EDAE5 /* VToast.swift in Sources */,
 				DAA0D5061ECA2515007EDAE5 /* VView.swift in Sources */,

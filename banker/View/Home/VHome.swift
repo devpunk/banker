@@ -4,8 +4,10 @@ class VHome:VView
 {
     private weak var controller:CHome!
     private weak var viewBar:VHomeBar!
+    private weak var viewMenu:VHomeMenu!
     private weak var layoutBarTop:NSLayoutConstraint!
-    private let kBarHeight:CGFloat = 180
+    private let kBarHeight:CGFloat = 160
+    private let kMenuHeight:CGFloat = 40
     
     override init(controller:CController)
     {
@@ -15,7 +17,11 @@ class VHome:VView
         let viewBar:VHomeBar = VHomeBar(controller:self.controller)
         self.viewBar = viewBar
         
+        let viewMenu:VHomeMenu = VHomeMenu(controller:self.controller)
+        self.viewMenu = viewMenu
+        
         addSubview(viewBar)
+        addSubview(viewMenu)
         
         layoutBarTop = NSLayoutConstraint.topToTop(
             view:viewBar,
@@ -25,6 +31,16 @@ class VHome:VView
             constant:kBarHeight)
         NSLayoutConstraint.equalsHorizontal(
             view:viewBar,
+            toView:self)
+        
+        NSLayoutConstraint.topToBottom(
+            view:viewMenu,
+            toView:viewBar)
+        NSLayoutConstraint.height(
+            view:viewMenu,
+            constant:kMenuHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:viewMenu,
             toView:self)
     }
     
