@@ -44,6 +44,7 @@
 		DAA0D5051ECA2515007EDAE5 /* VToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4DF1ECA2515007EDAE5 /* VToast.swift */; };
 		DAA0D5061ECA2515007EDAE5 /* VView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4E01ECA2515007EDAE5 /* VView.swift */; };
 		DAA0D5091ECA2697007EDAE5 /* DBanker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5071ECA2697007EDAE5 /* DBanker.xcdatamodeld */; };
+		DAA0D50B1ECA3C5B007EDAE5 /* VHomeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		DAA0D4DF1ECA2515007EDAE5 /* VToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VToast.swift; sourceTree = "<group>"; };
 		DAA0D4E01ECA2515007EDAE5 /* VView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VView.swift; sourceTree = "<group>"; };
 		DAA0D5081ECA2697007EDAE5 /* DBanker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBanker.xcdatamodel; sourceTree = "<group>"; };
+		DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 			children = (
 				DAA0D4D31ECA2515007EDAE5 /* VHome.swift */,
 				DAA0D4D41ECA2515007EDAE5 /* VHomeBar.swift */,
+				DAA0D50A1ECA3C5B007EDAE5 /* VHomeMenu.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				DAA0D4F51ECA2515007EDAE5 /* MHome.swift in Sources */,
 				DAA0D5011ECA2515007EDAE5 /* VCollectionFlow.swift in Sources */,
 				DAA0D4F61ECA2515007EDAE5 /* MHomeProtocol.swift in Sources */,
+				DAA0D50B1ECA3C5B007EDAE5 /* VHomeMenu.swift in Sources */,
 				DAA0D4EA1ECA2515007EDAE5 /* ExtensionFileManager.swift in Sources */,
 				DAA0D4FA1ECA2515007EDAE5 /* VHome.swift in Sources */,
 				DAA0D4E51ECA2515007EDAE5 /* CParent.swift in Sources */,

@@ -5,8 +5,8 @@ class VHomeBar:UIView
     private weak var controller:CHome!
     private weak var labelBalance:UILabel!
     private let kTitleHeight:CGFloat = 22
-    private let kBalanceHeight:CGFloat = 38
-    private let kBalanceBottom:CGFloat = -20
+    private let kBalanceHeight:CGFloat = 40
+    private let kBalanceBottom:CGFloat = -10
     private let kLabelMargin:CGFloat = 10
     
     init(controller:CHome)
