@@ -6,7 +6,7 @@ class MHomeCalendar:MHomeProtocol
     {
         get
         {
-            return #imageLiteral(resourceName: "assetGenericAdd")
+            return #imageLiteral(resourceName: "assetGenericCalendar")
         }
     }
     

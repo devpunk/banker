@@ -6,7 +6,7 @@ class MHomeSettings:MHomeProtocol
     {
         get
         {
-            return #imageLiteral(resourceName: "assetGenericAdd")
+            return #imageLiteral(resourceName: "assetGenericSettings")
         }
     }
     
