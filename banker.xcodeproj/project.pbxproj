@@ -48,6 +48,7 @@
 		DAA0D50D1ECA3DEF007EDAE5 /* VHomeMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */; };
 		DAA0D50F1ECA4308007EDAE5 /* VHomeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */; };
 		DAA0D5111ECA506B007EDAE5 /* generic.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D5101ECA506B007EDAE5 /* generic.xcassets */; };
+		DAA0D5131ECA58AE007EDAE5 /* MHomeMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5121ECA58AE007EDAE5 /* MHomeMovement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		DAA0D50C1ECA3DEF007EDAE5 /* VHomeMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeMenuCell.swift; sourceTree = "<group>"; };
 		DAA0D50E1ECA4308007EDAE5 /* VHomeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VHomeBackground.swift; sourceTree = "<group>"; };
 		DAA0D5101ECA506B007EDAE5 /* generic.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = generic.xcassets; sourceTree = "<group>"; };
+		DAA0D5121ECA58AE007EDAE5 /* MHomeMovement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeMovement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			children = (
 				DAA0D4C91ECA2515007EDAE5 /* MHome.swift */,
 				DAA0D4CA1ECA2515007EDAE5 /* MHomeProtocol.swift */,
+				DAA0D5121ECA58AE007EDAE5 /* MHomeMovement.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				DAA0D4EC1ECA2515007EDAE5 /* ExtensionNotification.swift in Sources */,
 				DAA0D4F11ECA2515007EDAE5 /* ExtensionUIColor.swift in Sources */,
 				DAA0D4F31ECA2515007EDAE5 /* ExtensionURL.swift in Sources */,
+				DAA0D5131ECA58AE007EDAE5 /* MHomeMovement.swift in Sources */,
 				DAA0D50D1ECA3DEF007EDAE5 /* VHomeMenuCell.swift in Sources */,
 				DAA0D4EB1ECA2515007EDAE5 /* ExtensionMKAnnotationView.swift in Sources */,
 				DAA0D5051ECA2515007EDAE5 /* VToast.swift in Sources */,

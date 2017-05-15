@@ -1,6 +1,6 @@
 import UIKit
 
-class VHomeMenu:UIView
+class VHomeMenu:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 {
     private weak var controller:CHome!
     
