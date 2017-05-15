@@ -10,14 +10,6 @@ class MHomeMovement:MHomeProtocol
         }
     }
     
-    var title:String
-    {
-        get
-        {
-            return NSLocalizedString("MHomeMovement_title", comment:"")
-        }
-    }
-    
     func selected(controller:CHome)
     {
         

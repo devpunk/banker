@@ -3,12 +3,11 @@ import UIKit
 class VHomeMenuCell:UICollectionViewCell
 {
     private weak var imageView:UIImageView!
-    private weak var label:UILabel!
-    private let kLabelHeight:CGFloat = 22
     
     override init(frame:CGRect)
     {
         super.init(frame:frame)
+        clipsToBounds = true
         
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
@@ -17,30 +16,10 @@ class VHomeMenuCell:UICollectionViewCell
         imageView.clipsToBounds = true
         self.imageView = imageView
         
-        let label:UILabel = UILabel()
-        label.isUserInteractionEnabled = false
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.backgroundColor = UIColor.clear
-        label.textAlignment = NSTextAlignment.center
-        label.font = UIFont.regular(size:11)
-        label.textColor = UIColor.white
-        self.label = label
-        
         addSubview(imageView)
-        addSubview(label)
         
         NSLayoutConstraint.equals(
             view:imageView,
-            toView:self)
-        
-        NSLayoutConstraint.bottomToBottom(
-            view:label,
-            toView:self)
-        NSLayoutConstraint.height(
-            view:label,
-            constant:kLabelHeight)
-        NSLayoutConstraint.equalsHorizontal(
-            view:label,
             toView:self)
     }
     
@@ -49,10 +28,41 @@ class VHomeMenuCell:UICollectionViewCell
         return nil
     }
     
+    override var isSelected:Bool
+    {
+        didSet
+        {
+            hover()
+        }
+    }
+    
+    override var isHighlighted: Bool
+    {
+        didSet
+        {
+            hover()
+        }
+    }
+    
+    //MARK: private
+    
+    private func hover()
+    {
+        if isSelected || isHighlighted
+        {
+            backgroundColor = UIColor(white:1, alpha:0.3)
+        }
+        else
+        {
+            backgroundColor = UIColor.clear
+        }
+    }
+    
     //MARK: public
     
     func config(model:MHomeProtocol)
     {
-        
+        imageView.image = model.image
+        hover()
     }
 }
