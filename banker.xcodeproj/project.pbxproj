@@ -55,6 +55,7 @@
 		DAA0D51B1ECA6CA0007EDAE5 /* MHomeCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D51A1ECA6CA0007EDAE5 /* MHomeCalendar.swift */; };
 		DAA0D51E1ECA789D007EDAE5 /* CMovements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D51D1ECA789D007EDAE5 /* CMovements.swift */; };
 		DAA0D5211ECA791F007EDAE5 /* VMovements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5201ECA791F007EDAE5 /* VMovements.swift */; };
+		DAA0D5231ECA7C1A007EDAE5 /* VMovementsField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5221ECA7C1A007EDAE5 /* VMovementsField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		DAA0D51A1ECA6CA0007EDAE5 /* MHomeCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeCalendar.swift; sourceTree = "<group>"; };
 		DAA0D51D1ECA789D007EDAE5 /* CMovements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMovements.swift; sourceTree = "<group>"; };
 		DAA0D5201ECA791F007EDAE5 /* VMovements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovements.swift; sourceTree = "<group>"; };
+		DAA0D5221ECA7C1A007EDAE5 /* VMovementsField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovementsField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA0D5201ECA791F007EDAE5 /* VMovements.swift */,
+				DAA0D5221ECA7C1A007EDAE5 /* VMovementsField.swift */,
 			);
 			path = Movements;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				DAA0D4F11ECA2515007EDAE5 /* ExtensionUIColor.swift in Sources */,
 				DAA0D4F31ECA2515007EDAE5 /* ExtensionURL.swift in Sources */,
 				DAA0D5131ECA58AE007EDAE5 /* MHomeMovement.swift in Sources */,
+				DAA0D5231ECA7C1A007EDAE5 /* VMovementsField.swift in Sources */,
 				DAA0D50D1ECA3DEF007EDAE5 /* VHomeMenuCell.swift in Sources */,
 				DAA0D4EB1ECA2515007EDAE5 /* ExtensionMKAnnotationView.swift in Sources */,
 				DAA0D5051ECA2515007EDAE5 /* VToast.swift in Sources */,
