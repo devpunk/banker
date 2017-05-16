@@ -5,7 +5,10 @@ class VMovementsMenuType:UIView
     private weak var controller:CMovements!
     private weak var itemDeposit:VMovementsMenuTypeItem!
     private weak var itemExpense:VMovementsMenuTypeItem!
-    private weak var layoutExpenseWidth:NSLayoutConstraint!
+    private weak var viewIndicator:VMovementsMenuTypeIndicator!
+    private weak var layoutIndicatorLeft:NSLayoutConstraint!
+    private let kItemMultiplier:CGFloat = 0.5
+    private let kIndicatorMultiplier:CGFloat = 0.55
     
     init(controller:CMovements)
     {
@@ -23,8 +26,23 @@ class VMovementsMenuType:UIView
             title:NSLocalizedString("VMovementsMenuType_itemExpense", comment:""))
         self.itemExpense = itemExpense
         
+        let viewIndicator:VMovementsMenuTypeIndicator = VMovementsMenuTypeIndicator()
+        self.viewIndicator = viewIndicator
+        
+        addSubview(viewIndicator)
         addSubview(itemExpense)
         addSubview(itemDeposit)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:viewIndicator,
+            toView:self)
+        layoutIndicatorLeft = NSLayoutConstraint.leftToLeft(
+            view:viewIndicator,
+            toView:self)
+        NSLayoutConstraint.width(
+            view:viewIndicator,
+            toView:self,
+            multiplier:0.65)
         
         NSLayoutConstraint.equalsVertical(
             view:itemExpense,
@@ -32,31 +50,25 @@ class VMovementsMenuType:UIView
         NSLayoutConstraint.leftToLeft(
             view:itemExpense,
             toView:self)
-        layoutExpenseWidth = NSLayoutConstraint.width(
-            view:itemExpense)
+        NSLayoutConstraint.width(
+            view:itemExpense,
+            toView:self,
+            multiplier:kItemMultiplier)
         
         NSLayoutConstraint.equalsVertical(
             view:itemDeposit,
             toView:self)
-        NSLayoutConstraint.leftToRight(
-            view:itemDeposit,
-            toView:itemExpense)
         NSLayoutConstraint.rightToRight(
             view:itemDeposit,
             toView:self)
+        NSLayoutConstraint.width(
+            view:itemDeposit,
+            toView:self,
+            multiplier:kItemMultiplier)
     }
     
     required init?(coder:NSCoder)
     {
         return nil
-    }
-    
-    override func layoutSubviews()
-    {
-        let width:CGFloat = bounds.size.width
-        let width_2:CGFloat = width / 2.0
-        layoutExpenseWidth.constant = width_2
-        
-        super.layoutSubviews()
     }
 }

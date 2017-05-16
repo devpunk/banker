@@ -8,7 +8,7 @@ class VMovementsMenu:UIView
     private let kBorderHeight:CGFloat = 1
     private let kTypeWidth:CGFloat = 200
     private let kTypeRight:CGFloat = -10
-    private let kTypeVertical:CGFloat = 5
+    private let kTypeVertical:CGFloat = 10
     
     init(controller:CMovements)
     {

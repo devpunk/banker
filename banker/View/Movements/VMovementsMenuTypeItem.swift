@@ -5,6 +5,8 @@ class VMovementsMenuTypeItem:UIButton
     init(title:String)
     {
         super.init(frame:CGRect.zero)
+        translatesAutoresizingMaskIntoConstraints = false
+        clipsToBounds = true
         setTitle(title, for:UIControlState.normal)
         setTitleColor(
             UIColor.white,
@@ -13,9 +15,9 @@ class VMovementsMenuTypeItem:UIButton
             UIColor.white,
             for:UIControlState.selected)
         setTitleColor(
-            UIColor.bankerOrange,
+            UIColor.bankerBlue,
             for:UIControlState.normal)
-        titleLabel!.font = UIFont.regular(size:13)
+        titleLabel!.font = UIFont.regular(size:14)
     }
     
     required init?(coder:NSCoder)
