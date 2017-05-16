@@ -4,11 +4,12 @@ class VMovements:VView
 {
     private weak var controller:CMovements!
     private weak var viewField:VMovementsField!
+    private weak var viewMenu:VMovementsMenu!
     private weak var layoutFieldHeight:NSLayoutConstraint!
     private let kFieldMaxHeight:CGFloat = 120
     private let kFieldMinHeight:CGFloat = 60
     private let kFieldTop:CGFloat = 20
-    private let kBorderHeight:CGFloat = 1
+    private let kMenuHeight:CGFloat = 60
     private let kAnimationDuration:TimeInterval = 0.1
     
     override init(controller:CController)
@@ -19,10 +20,11 @@ class VMovements:VView
         let viewField:VMovementsField = VMovementsField(controller:self.controller)
         self.viewField = viewField
         
-        let border:VBorder = VBorder(color:UIColor.black)
+        let viewMenu:VMovementsMenu = VMovementsMenu(controller:self.controller)
+        self.viewMenu = viewMenu
         
+        addSubview(viewMenu)
         addSubview(viewField)
-        addSubview(border)
         
         NSLayoutConstraint.topToTop(
             view:viewField,
@@ -35,13 +37,13 @@ class VMovements:VView
             toView:self)
         
         NSLayoutConstraint.topToBottom(
-            view:border,
+            view:viewMenu,
             toView:viewField)
         NSLayoutConstraint.height(
-            view:border,
-            constant:kBorderHeight)
+            view:viewMenu,
+            constant:kMenuHeight)
         NSLayoutConstraint.equalsHorizontal(
-            view:border,
+            view:viewMenu,
             toView:self)
     }
     

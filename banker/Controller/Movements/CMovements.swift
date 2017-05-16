@@ -23,4 +23,12 @@ class CMovements:CController
         super.viewWillDisappear(animated)
         parentController.statusBarAppareance(statusBarStyle:UIStatusBarStyle.lightContent)
     }
+    
+    //MARK: public
+    
+    func back()
+    {
+        UIApplication.shared.keyWindow!.endEditing(true)
+        parentController.pop(horizontal:CParent.TransitionHorizontal.fromRight)
+    }
 }
