@@ -21,7 +21,7 @@ class MKeyboardNumber:MKeyboardProtocol
         }
     }
     
-    func selected(model:MKeyboard, view:UITextView)
+    final func selected(model:MKeyboard, view:UITextView)
     {
         let currentString:String = view.text
         let countCharacters:Int = currentString.characters.count

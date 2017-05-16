@@ -8,6 +8,7 @@ class MKeyboard
     let kSign:String = "-"
     let kDot:String = "."
     var editing:String
+    private let currency:String
     private let kInitial:String = "0"
     private let kInfinitum:String = "∞"
     private let numberFormatter:NumberFormatter
@@ -18,7 +19,16 @@ class MKeyboard
     
     private class func firstRow() -> [MKeyboardProtocol]
     {
-        return []
+        let item7:MKeyboardNumber7 = MKeyboardNumber7()
+        let item8:MKeyboardNumber8 = MKeyboardNumber8()
+        let item9:MKeyboardNumber9 = MKeyboardNumber9()
+        
+        let items:[MKeyboardProtocol] = [
+            item7,
+            item8,
+            item9]
+        
+        return items
     }
     
     private class func secondRow() -> [MKeyboardProtocol]

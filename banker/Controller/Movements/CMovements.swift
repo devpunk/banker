@@ -15,6 +15,7 @@ class CMovements:CController
     {
         super.viewDidAppear(animated)
         parentController.statusBarAppareance(statusBarStyle:UIStatusBarStyle.default)
+        viewMovements.viewAppeared()
     }
     
     override func viewWillDisappear(_ animated:Bool)

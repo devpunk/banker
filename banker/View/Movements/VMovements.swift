@@ -5,8 +5,9 @@ class VMovements:VView
     private weak var controller:CMovements!
     private weak var viewField:VMovementsField!
     private weak var layoutFieldHeight:NSLayoutConstraint!
-    private let kFieldMaxHeight:CGFloat = 125
-    private let kFieldMinHeight:CGFloat = 65
+    private let kFieldMaxHeight:CGFloat = 120
+    private let kFieldMinHeight:CGFloat = 60
+    private let kFieldTop:CGFloat = 20
     private let kBorderHeight:CGFloat = 1
     private let kAnimationDuration:TimeInterval = 0.1
     
@@ -25,7 +26,8 @@ class VMovements:VView
         
         NSLayoutConstraint.topToTop(
             view:viewField,
-            toView:self)
+            toView:self,
+            constant:kFieldTop)
         layoutFieldHeight = NSLayoutConstraint.height(
             view:viewField)
         NSLayoutConstraint.equalsHorizontal(
