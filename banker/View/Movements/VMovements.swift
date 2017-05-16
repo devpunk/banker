@@ -5,6 +5,10 @@ class VMovements:VView
     private weak var controller:CMovements!
     private weak var viewField:VMovementsField!
     private weak var layoutFieldHeight:NSLayoutConstraint!
+    private let kFieldMaxHeight:CGFloat = 125
+    private let kFieldMinHeight:CGFloat = 65
+    private let kBorderHeight:CGFloat = 1
+    private let kAnimationDuration:TimeInterval = 0.1
     
     override init(controller:CController)
     {
@@ -37,30 +41,29 @@ class VMovements:VView
     {
         let width:CGFloat = bounds.maxX
         let height:CGFloat = bounds.maxY
-        let textHeight:CGFloat
+        let fieldHeight:CGFloat
         
         if height >= width
         {
-            textHeight = kTextMaxHeight
+            fieldHeight = kFieldMaxHeight
         }
         else
         {
-            textHeight = kTextMinHeight
+            fieldHeight = kFieldMinHeight
         }
         
-        layoutTextHeight.constant = textHeight
+        layoutFieldHeight.constant = fieldHeight
         
         UIView.animate(
-            withDuration:kAnimationFastDuration,
+            withDuration:kAnimationDuration,
             animations:
             { [weak self] in
                 
                 self?.layoutIfNeeded()
-                
             })
         { [weak self] (done:Bool) in
             
-            let _:Bool? = self?.viewText.becomeFirstResponder()
+            let _:Bool? = self?.viewField.becomeFirstResponder()
         }
     }
     
@@ -69,7 +72,6 @@ class VMovements:VView
     func viewAppeared()
     {
         resizeField()
-        viewFunctions.refresh()
     }
     
     func orientationChange()
