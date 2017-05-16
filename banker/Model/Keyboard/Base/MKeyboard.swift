@@ -4,11 +4,11 @@ class MKeyboard
 {
     let rows:[[MKeyboardProtocol]]
     let cols:Int
-    let kEmpty:String = ""
-    let kSign:String = "-"
-    let kInitial:String = "0"
-    let kDot:String = "."
-    let kInfinitum:String = "∞"
+    private var editing:String
+    private let kSign:String = "-"
+    private let kInitial:String = "0"
+    private let kDot:String = "."
+    private let kInfinitum:String = "∞"
     private let numberFormatter:NumberFormatter
     private let kMinIntegers:Int = 1
     private let kMaxIntegers:Int = 9
@@ -48,6 +48,7 @@ class MKeyboard
         
         self.rows = rows
         self.cols = cols
+        editing = kInitial
         
         numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = NumberFormatter.Style.decimal
@@ -59,99 +60,18 @@ class MKeyboard
     
     //MARK: public
     
-    func lastNumber() -> Double
+    func currentValue() -> Double
     {
         guard
+            let number:NSNumber = numberFormatter.number(from:editing)
             
-            let string:String = states.last?.editing,
-            let number:NSNumber = numberFormatter.number(
-                from:string)
-            
-            else
-        {
-            return 0
-        }
-        
-        let scalar:Double = number.doubleValue
-        
-        return scalar
-    }
-    
-    func numberAsString(scalar:Double) -> String
-    {
-        let number:NSNumber = NSNumber(value:scalar)
-        
-        guard
-            
-            let string:String = numberFormatter.string(from:number)
-            
-            else
-        {
-            return kInitial
-        }
-        
-        return string
-    }
-    
-    func stringAsNumber(string:String) -> Double
-    {
-        guard
-            
-            let number:NSNumber = numberFormatter.number(
-                from:string)
-            
-            else
-        {
-            return 0
-        }
-        
-        let scalar:Double = number.doubleValue
-        
-        return scalar
-    }
-    
-    func updateIfNeeded(view:UITextView)
-    {
-        guard
-            
-            let lastState:MKeyboardState = states.last
-            
-            else
-        {
-            return
-        }
-        
-        if lastState.needsUpdate
-        {
-            lastState.needsUpdate = false
-            view.text = lastState.editing
-        }
-    }
-    
-    func commitIfNeeded(view:UITextView)
-    {
-        guard
-            
-            let lastState:MKeyboardState = states.last
-            
-            else
-        {
-            return
-        }
-        
-        if lastState.needsUpdate
-        {
-            states.removeLast()
-        }
         else
         {
-            lastState.commitState(
-                model:self,
-                view:view)
-            
-            NotificationCenter.default.post(
-                name:Notification.keyboardUpdate,
-                object:lastState)
+            return 0
         }
+        
+        let scalar:Double = number.doubleValue
+        
+        return scalar
     }
 }
