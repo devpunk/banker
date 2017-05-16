@@ -1,9 +1,11 @@
-//
-//  MKeyboardNumber4.swift
-//  banker
-//
-//  Created by zero on 5/16/17.
-//  Copyright © 2017 iturbide. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class MKeyboardNumber4:MKeyboardNumber
+{
+    private let kNumber:String = "4"
+    
+    init()
+    {
+        super.init(number:kNumber, image:#imageLiteral(resourceName: "assetKeyboard4"))
+    }
+}
