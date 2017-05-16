@@ -10,6 +10,14 @@ class VHomeAdd:UIButton
         clipsToBounds = true
         contentMode = UIViewContentMode.center
         translatesAutoresizingMaskIntoConstraints = false
+        setImage(
+            #imageLiteral(resourceName: "assetGenericAddOn").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.normal)
+        setImage(
+            #imageLiteral(resourceName: "assetGenericAddOff").withRenderingMode(UIImageRenderingMode.alwaysOriginal),
+            for:UIControlState.highlighted)
+        imageView!.clipsToBounds = true
+        imageView!.contentMode = UIViewContentMode.center
         self.controller = controller
         
         addTarget(
