@@ -25,6 +25,7 @@
 		DA60E89C1ECB618F0025A558 /* MKeyboardNumber7.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E89B1ECB618F0025A558 /* MKeyboardNumber7.swift */; };
 		DA60E89E1ECB61950025A558 /* MKeyboardNumber8.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E89D1ECB61950025A558 /* MKeyboardNumber8.swift */; };
 		DA60E8A01ECB619D0025A558 /* MKeyboardNumber9.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E89F1ECB619D0025A558 /* MKeyboardNumber9.swift */; };
+		DA60E8A21ECB7E280025A558 /* MKeyboardBackspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E8A11ECB7E280025A558 /* MKeyboardBackspace.swift */; };
 		DAA0D4E11ECA2515007EDAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */; };
 		DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B01ECA2515007EDAE5 /* CHome.swift */; };
 		DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B21ECA2515007EDAE5 /* CAppDelegate.swift */; };
@@ -93,6 +94,7 @@
 		DA60E89B1ECB618F0025A558 /* MKeyboardNumber7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardNumber7.swift; sourceTree = "<group>"; };
 		DA60E89D1ECB61950025A558 /* MKeyboardNumber8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardNumber8.swift; sourceTree = "<group>"; };
 		DA60E89F1ECB619D0025A558 /* MKeyboardNumber9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardNumber9.swift; sourceTree = "<group>"; };
+		DA60E8A11ECB7E280025A558 /* MKeyboardBackspace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardBackspace.swift; sourceTree = "<group>"; };
 		DA83A82D1ECA24A6002AE72D /* banker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA0D4B01ECA2515007EDAE5 /* CHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHome.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				DA60E89B1ECB618F0025A558 /* MKeyboardNumber7.swift */,
 				DA60E89D1ECB61950025A558 /* MKeyboardNumber8.swift */,
 				DA60E89F1ECB619D0025A558 /* MKeyboardNumber9.swift */,
+				DA60E8A11ECB7E280025A558 /* MKeyboardBackspace.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				DAA0D50D1ECA3DEF007EDAE5 /* VHomeMenuCell.swift in Sources */,
 				DA60E89E1ECB61950025A558 /* MKeyboardNumber8.swift in Sources */,
 				DAA0D4EB1ECA2515007EDAE5 /* ExtensionMKAnnotationView.swift in Sources */,
+				DA60E8A21ECB7E280025A558 /* MKeyboardBackspace.swift in Sources */,
 				DAA0D5051ECA2515007EDAE5 /* VToast.swift in Sources */,
 				DAA0D5061ECA2515007EDAE5 /* VView.swift in Sources */,
 				DAA0D51E1ECA789D007EDAE5 /* CMovements.swift in Sources */,

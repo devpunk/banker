@@ -26,7 +26,7 @@ class MKeyboardNumber:MKeyboardProtocol
         let currentString:String = view.text
         let countCharacters:Int = currentString.characters.count
         
-        if countCharacters < 4
+        if countCharacters < 3
         {
             let currentNumber:Double = model.currentValue()
             
@@ -34,14 +34,7 @@ class MKeyboardNumber:MKeyboardProtocol
             {
                 if !currentString.contains(model.kDot)
                 {
-                    if currentString.contains(model.kSign)
-                    {
-                        view.text = "\(model.currency)\(model.kSign)"
-                    }
-                    else
-                    {
-                        view.text = model.currency
-                    }
+                    view.text = model.currency
                 }
             }
         }

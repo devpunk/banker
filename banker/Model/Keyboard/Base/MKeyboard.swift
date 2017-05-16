@@ -3,14 +3,12 @@ import UIKit
 class MKeyboard
 {
     var editing:String
+    let currency:String
     let rows:[[MKeyboardProtocol]]
     let cols:Int
     let kEmpty:String = ""
-    let kSign:String = "-"
     let kDot:String = "."
-    let currency:String
-    private let kInitial:String = "0"
-    private let kInfinitum:String = "∞"
+    let kInitial:String = "0"
     private let numberFormatter:NumberFormatter
     private let kMinIntegers:Int = 1
     private let kMaxIntegers:Int = 9
