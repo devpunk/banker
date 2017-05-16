@@ -56,15 +56,15 @@ class VMovementsField:UITextView, UITextViewDelegate
         
         if let inputView:VKeyboard = self.inputView as? VKeyboard
         {
-            modelKeyboard = inputView.model.states
+            modelKeyboard = inputView.model
         }
         else
         {
             modelKeyboard = nil
         }
         
-        let fieldInput:VKeyboard = VKeyboard(textView:self, states:states)
-        inputView = textInput
+        let fieldInput:VKeyboard = VKeyboard(textView:self, model:modelKeyboard)
+        inputView = fieldInput
         
         return super.becomeFirstResponder()
     }

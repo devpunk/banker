@@ -14,11 +14,7 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
     {
         self.model = MKeyboard(editing:model?.editing)
         
-        let screenSize:CGSize = UIScreen.main.bounds.size
-        let width:CGFloat = screenSize.width
-        let height:CGFloat = screenSize.height
-        let initial:String = textView.text
-        
+        let width:CGFloat = UIScreen.main.bounds.size.width
         let countRows:CGFloat = CGFloat(self.model.rows.count)
         let interLines:CGFloat = kInterLine * (countRows + 1)
         let rowsHeight:CGFloat = kRowHeight * countRows
@@ -87,53 +83,6 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
         let item:MKeyboardProtocol = model.rows[index.section][index.item]
         
         return item
-    }
-    
-    //MARK: public
-    
-    func undoToState(state:MKeyboardState)
-    {
-        let editing:String = model.removeAllAfter(state:state)
-        let emptyString:String = model.kEmpty
-        state.undoBack(model:model)
-        
-        DispatchQueue.main.async
-            { [weak self] in
-                
-                guard
-                    
-                    let strongSelf:VKeyboard = self
-                    
-                    else
-                {
-                    return
-                }
-                
-                strongSelf.textView?.text = emptyString
-                strongSelf.textView?.insertText(editing)
-        }
-    }
-    
-    func restartEditing()
-    {
-        let emptyString:String = model.kEmpty
-        let initialString:String = model.kInitial
-        
-        DispatchQueue.main.async
-            { [weak self] in
-                
-                guard
-                    
-                    let strongSelf:VKeyboard = self
-                    
-                    else
-                {
-                    return
-                }
-                
-                strongSelf.textView?.text = emptyString
-                strongSelf.textView?.insertText(initialString)
-        }
     }
     
     //MARK: collectionView delegate
