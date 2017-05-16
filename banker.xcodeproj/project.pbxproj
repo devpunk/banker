@@ -11,6 +11,7 @@
 		DA60E87D1ECB46160025A558 /* MKeyboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */; };
 		DA60E8801ECB4DC70025A558 /* VKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */; };
 		DA60E8821ECB51B60025A558 /* VKeyboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E8811ECB51B60025A558 /* VKeyboardCell.swift */; };
+		DA60E8841ECB562C0025A558 /* MHomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E8831ECB562C0025A558 /* MHomeStore.swift */; };
 		DAA0D4E11ECA2515007EDAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */; };
 		DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B01ECA2515007EDAE5 /* CHome.swift */; };
 		DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B21ECA2515007EDAE5 /* CAppDelegate.swift */; };
@@ -66,6 +67,7 @@
 		DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardProtocol.swift; sourceTree = "<group>"; };
 		DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKeyboard.swift; sourceTree = "<group>"; };
 		DA60E8811ECB51B60025A558 /* VKeyboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKeyboardCell.swift; sourceTree = "<group>"; };
+		DA60E8831ECB562C0025A558 /* MHomeStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeStore.swift; sourceTree = "<group>"; };
 		DA83A82D1ECA24A6002AE72D /* banker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA0D4B01ECA2515007EDAE5 /* CHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHome.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				DAA0D5161ECA6BCE007EDAE5 /* MHomeSettings.swift */,
 				DAA0D5181ECA6BDC007EDAE5 /* MHomeChart.swift */,
 				DAA0D51A1ECA6CA0007EDAE5 /* MHomeCalendar.swift */,
+				DA60E8831ECB562C0025A558 /* MHomeStore.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				DAA0D4FB1ECA2515007EDAE5 /* VHomeBar.swift in Sources */,
 				DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */,
 				DAA0D4EE1ECA2515007EDAE5 /* ExtensionNSManagedObject.swift in Sources */,
+				DA60E8841ECB562C0025A558 /* MHomeStore.swift in Sources */,
 				DAA0D4F51ECA2515007EDAE5 /* MHome.swift in Sources */,
 				DAA0D5011ECA2515007EDAE5 /* VCollectionFlow.swift in Sources */,
 				DAA0D4F61ECA2515007EDAE5 /* MHomeProtocol.swift in Sources */,

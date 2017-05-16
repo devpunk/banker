@@ -10,6 +10,7 @@ class MHome
         let itemCalendar:MHomeCalendar = MHomeCalendar()
         let itemBudgets:MHomeBudgets = MHomeBudgets()
         let itemSettings:MHomeSettings = MHomeSettings()
+        let itemStore:MHomeStore = MHomeStore()
         let itemMovement:MHomeMovement = MHomeMovement()
         
         items = [
@@ -17,6 +18,7 @@ class MHome
             itemCalendar,
             itemBudgets,
             itemSettings,
+            itemStore,
             itemMovement]
     }
 }
