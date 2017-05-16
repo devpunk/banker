@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA60E87B1ECB44400025A558 /* MKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87A1ECB44400025A558 /* MKeyboard.swift */; };
+		DA60E87D1ECB46160025A558 /* MKeyboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */; };
 		DAA0D4E11ECA2515007EDAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */; };
 		DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B01ECA2515007EDAE5 /* CHome.swift */; };
 		DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B21ECA2515007EDAE5 /* CAppDelegate.swift */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		DA60E87A1ECB44400025A558 /* MKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboard.swift; sourceTree = "<group>"; };
+		DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardProtocol.swift; sourceTree = "<group>"; };
 		DA83A82D1ECA24A6002AE72D /* banker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA0D4B01ECA2515007EDAE5 /* CHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHome.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				DA60E87A1ECB44400025A558 /* MKeyboard.swift */,
+				DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				DAA0D4EF1ECA2515007EDAE5 /* ExtensionString.swift in Sources */,
 				DAA0D50F1ECA4308007EDAE5 /* VHomeBackground.swift in Sources */,
 				DAA0D4ED1ECA2515007EDAE5 /* ExtensionNSLayoutConstraint.swift in Sources */,
+				DA60E87D1ECB46160025A558 /* MKeyboardProtocol.swift in Sources */,
 				DA60E87B1ECB44400025A558 /* MKeyboard.swift in Sources */,
 				DAA0D5171ECA6BCE007EDAE5 /* MHomeSettings.swift in Sources */,
 				DAA0D5001ECA2515007EDAE5 /* VCollection.swift in Sources */,
