@@ -4,10 +4,11 @@ class MKeyboard
 {
     let rows:[[MKeyboardProtocol]]
     let cols:Int
-    private(set) var editing:String
-    private let kSign:String = "-"
+    let kEmpty:String = ""
+    let kSign:String = "-"
+    let kDot:String = "."
+    var editing:String
     private let kInitial:String = "0"
-    private let kDot:String = "."
     private let kInfinitum:String = "∞"
     private let numberFormatter:NumberFormatter
     private let kMinIntegers:Int = 1

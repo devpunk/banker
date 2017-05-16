@@ -18,7 +18,10 @@ class VMovements:VView
         let viewField:VMovementsField = VMovementsField(controller:self.controller)
         self.viewField = viewField
         
+        let border:VBorder = VBorder(color:UIColor.black)
+        
         addSubview(viewField)
+        addSubview(border)
         
         NSLayoutConstraint.topToTop(
             view:viewField,
@@ -27,6 +30,16 @@ class VMovements:VView
             view:viewField)
         NSLayoutConstraint.equalsHorizontal(
             view:viewField,
+            toView:self)
+        
+        NSLayoutConstraint.topToBottom(
+            view:border,
+            toView:viewField)
+        NSLayoutConstraint.height(
+            view:border,
+            constant:kBorderHeight)
+        NSLayoutConstraint.equalsHorizontal(
+            view:border,
             toView:self)
     }
     
