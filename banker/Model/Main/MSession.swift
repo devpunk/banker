@@ -46,6 +46,7 @@ class MSession
             }
             
             self.settings = settings
+            DManager.sharedInstance?.save()
         }
     }
     
@@ -55,7 +56,10 @@ class MSession
     {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async
         {
-            self.asyncLoadSession()
+            if self.settings == nil
+            {
+                self.asyncLoadSession()
+            }
         }
     }
 }

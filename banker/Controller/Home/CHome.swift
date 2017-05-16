@@ -23,6 +23,13 @@ class CHome:CController
         view = viewHome
     }
     
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        MSession.sharedInstance.loadSession()
+    }
+    
     //MARK: public
     
     func openMovements()
