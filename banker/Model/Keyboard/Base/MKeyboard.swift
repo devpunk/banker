@@ -4,7 +4,7 @@ class MKeyboard
 {
     let rows:[[MKeyboardProtocol]]
     let cols:Int
-    private var editing:String
+    private(set) var editing:String
     private let kSign:String = "-"
     private let kInitial:String = "0"
     private let kDot:String = "."
@@ -25,7 +25,7 @@ class MKeyboard
         return []
     }
     
-    init()
+    init(editing:String?)
     {
         var cols:Int = 0
         var rows:[[MKeyboardProtocol]] = []
@@ -48,7 +48,15 @@ class MKeyboard
         
         self.rows = rows
         self.cols = cols
-        editing = kInitial
+        
+        if let editing:String = editing
+        {
+            self.editing = editing
+        }
+        else
+        {
+            self.editing = kInitial
+        }
         
         numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = NumberFormatter.Style.decimal
@@ -63,6 +71,7 @@ class MKeyboard
     func currentValue() -> Double
     {
         guard
+            
             let number:NSNumber = numberFormatter.number(from:editing)
             
         else
