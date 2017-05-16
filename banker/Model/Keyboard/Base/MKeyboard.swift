@@ -60,9 +60,11 @@ class MKeyboard
     private class func fourthRow() -> [MKeyboardProtocol]
     {
         let item0:MKeyboardNumber0 = MKeyboardNumber0()
+        let itemBackspace:MKeyboardBackspace = MKeyboardBackspace()
         
         let items:[MKeyboardProtocol] = [
-            item0]
+            item0,
+            itemBackspace]
         
         return items
     }
