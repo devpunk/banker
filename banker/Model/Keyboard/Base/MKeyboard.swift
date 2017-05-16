@@ -33,7 +33,40 @@ class MKeyboard
     
     private class func secondRow() -> [MKeyboardProtocol]
     {
-        return []
+        let item4:MKeyboardNumber4 = MKeyboardNumber4()
+        let item5:MKeyboardNumber5 = MKeyboardNumber5()
+        let item6:MKeyboardNumber6 = MKeyboardNumber6()
+        
+        let items:[MKeyboardProtocol] = [
+            item4,
+            item5,
+            item6]
+        
+        return items
+    }
+    
+    private class func thirdRow() -> [MKeyboardProtocol]
+    {
+        let item1:MKeyboardNumber1 = MKeyboardNumber1()
+        let item2:MKeyboardNumber2 = MKeyboardNumber2()
+        let item3:MKeyboardNumber3 = MKeyboardNumber3()
+        
+        let items:[MKeyboardProtocol] = [
+            item1,
+            item2,
+            item3]
+        
+        return items
+    }
+    
+    private class func fourthRow() -> [MKeyboardProtocol]
+    {
+        let item0:MKeyboardNumber0 = MKeyboardNumber0()
+        
+        let items:[MKeyboardProtocol] = [
+            item0]
+        
+        return items
     }
     
     init(editing:String?)
@@ -48,25 +81,23 @@ class MKeyboard
         }
         
         var cols:Int = 0
-        var rows:[[MKeyboardProtocol]] = []
         
-        let firstRow:[MKeyboardProtocol] = MKeyboard.firstRow()
-        rows.append(firstRow)
+        rows = [
+            MKeyboard.firstRow(),
+            MKeyboard.secondRow(),
+            MKeyboard.thirdRow(),
+            MKeyboard.fourthRow()]
         
-        if firstRow.count > cols
+        for row:[MKeyboardProtocol] in rows
         {
-            cols = firstRow.count
+            let countItems:Int = row.count
+            
+            if countItems > cols
+            {
+                cols = countItems
+            }
         }
         
-        let secondRow:[MKeyboardProtocol] = MKeyboard.secondRow()
-        rows.append(secondRow)
-        
-        if secondRow.count > cols
-        {
-            cols = secondRow.count
-        }
-        
-        self.rows = rows
         self.cols = cols
         
         if let editing:String = editing
