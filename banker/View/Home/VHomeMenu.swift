@@ -4,7 +4,7 @@ class VHomeMenu:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
 {
     private weak var controller:CHome!
     private weak var collectionView:VCollection!
-    private let kDeselectTime:TimeInterval = 0.3
+    private let kDeselectTime:TimeInterval = 0.4
     
     init(controller:CHome)
     {

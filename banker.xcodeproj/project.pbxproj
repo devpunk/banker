@@ -53,6 +53,7 @@
 		DAA0D5171ECA6BCE007EDAE5 /* MHomeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5161ECA6BCE007EDAE5 /* MHomeSettings.swift */; };
 		DAA0D5191ECA6BDC007EDAE5 /* MHomeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D5181ECA6BDC007EDAE5 /* MHomeChart.swift */; };
 		DAA0D51B1ECA6CA0007EDAE5 /* MHomeCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D51A1ECA6CA0007EDAE5 /* MHomeCalendar.swift */; };
+		DAA0D51E1ECA789D007EDAE5 /* CMovements.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D51D1ECA789D007EDAE5 /* CMovements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +104,7 @@
 		DAA0D5161ECA6BCE007EDAE5 /* MHomeSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeSettings.swift; sourceTree = "<group>"; };
 		DAA0D5181ECA6BDC007EDAE5 /* MHomeChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeChart.swift; sourceTree = "<group>"; };
 		DAA0D51A1ECA6CA0007EDAE5 /* MHomeCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHomeCalendar.swift; sourceTree = "<group>"; };
+		DAA0D51D1ECA789D007EDAE5 /* CMovements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMovements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		DAA0D4AE1ECA2515007EDAE5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DAA0D51C1ECA7894007EDAE5 /* Movements */,
 				DAA0D4AF1ECA2515007EDAE5 /* Home */,
 				DAA0D4B11ECA2515007EDAE5 /* Main */,
 			);
@@ -289,6 +292,14 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		DAA0D51C1ECA7894007EDAE5 /* Movements */ = {
+			isa = PBXGroup;
+			children = (
+				DAA0D51D1ECA789D007EDAE5 /* CMovements.swift */,
+			);
+			path = Movements;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -395,6 +406,7 @@
 				DAA0D4EB1ECA2515007EDAE5 /* ExtensionMKAnnotationView.swift in Sources */,
 				DAA0D5051ECA2515007EDAE5 /* VToast.swift in Sources */,
 				DAA0D5061ECA2515007EDAE5 /* VView.swift in Sources */,
+				DAA0D51E1ECA789D007EDAE5 /* CMovements.swift in Sources */,
 				DAA0D4FD1ECA2515007EDAE5 /* VAlert.swift in Sources */,
 				DAA0D4EF1ECA2515007EDAE5 /* ExtensionString.swift in Sources */,
 				DAA0D50F1ECA4308007EDAE5 /* VHomeBackground.swift in Sources */,

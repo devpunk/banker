@@ -6,7 +6,7 @@ class MHomeChart:MHomeProtocol
     {
         get
         {
-            return #imageLiteral(resourceName: "assetGenericAdd")
+            return #imageLiteral(resourceName: "assetGenericChart")
         }
     }
     
