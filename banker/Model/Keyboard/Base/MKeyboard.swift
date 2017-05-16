@@ -2,7 +2,6 @@ import UIKit
 
 class MKeyboard
 {
-    var states:[MKeyboardState]
     let rows:[[MKeyboardProtocol]]
     let cols:Int
     let kEmpty:String = ""
@@ -16,45 +15,39 @@ class MKeyboard
     private let kMinDecimals:Int = 0
     private let kMaxDecimals:Int = 9
     
-    init(states:[MKeyboardState]?, initial:String)
+    private class func firstRow() -> [MKeyboardProtocol]
     {
-        rows = []
-        
+        return []
+    }
+    
+    private class func secondRow() -> [MKeyboardProtocol]
+    {
+        return []
+    }
+    
+    init()
+    {
         var cols:Int = 0
+        var rows:[[MKeyboardProtocol]] = []
         
-        for row:MKeyboardRow in rows
+        let firstRow:[MKeyboardProtocol] = MKeyboard.firstRow()
+        rows.append(firstRow)
+        
+        if firstRow.count > cols
         {
-            let rowItems:Int = row.items.count
-            
-            if rowItems > cols
-            {
-                cols = rowItems
-            }
+            cols = firstRow.count
         }
         
+        let secondRow:[MKeyboardProtocol] = MKeyboard.secondRow()
+        rows.append(secondRow)
+        
+        if secondRow.count > cols
+        {
+            cols = secondRow.count
+        }
+        
+        self.rows = rows
         self.cols = cols
-        
-        if let states:[MKeyboardState] = states
-        {
-            self.states = states
-        }
-        else
-        {
-            let modelInitial:String
-            
-            if initial.isEmpty
-            {
-                modelInitial = kInitial
-            }
-            else
-            {
-                modelInitial = initial
-            }
-            
-            let stateInitial:MKeyboardStatePlain = MKeyboardStatePlain(
-                editing:modelInitial)
-            self.states = [stateInitial]
-        }
         
         numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = NumberFormatter.Style.decimal
@@ -65,58 +58,6 @@ class MKeyboard
     }
     
     //MARK: public
-    
-    func removeAllAfter(state:MKeyboardState) -> String
-    {
-        guard
-            
-            let lastState:MKeyboardState = states.popLast()
-            
-            else
-        {
-            let editing:String = state.editing
-            
-            return editing
-        }
-        
-        if lastState === state
-        {
-            let editing:String
-            
-            if let previous:MKeyboardState = states.last
-            {
-                editing = previous.editing
-            }
-            else
-            {
-                editing = lastState.editing
-            }
-            
-            states.append(lastState)
-            
-            return editing
-        }
-        else
-        {
-            let editing:String = removeAllAfter(state:state)
-            
-            return editing
-        }
-    }
-    
-    func lastString() -> String
-    {
-        guard
-            
-            let string:String = states.last?.editing
-            
-            else
-        {
-            return kInitial
-        }
-        
-        return string
-    }
     
     func lastNumber() -> Double
     {
