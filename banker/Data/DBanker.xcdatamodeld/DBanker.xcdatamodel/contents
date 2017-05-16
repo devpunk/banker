@@ -7,7 +7,7 @@
         <relationship name="tags" toMany="YES" deletionRule="Nullify" destinationEntity="DTag" inverseName="balances" inverseEntity="DTag" syncable="YES"/>
     </entity>
     <entity name="DSettings" representedClassName="DSettings" syncable="YES" codeGenerationType="class">
-        <attribute name="currencySymbol" attributeType="String" syncable="YES"/>
+        <attribute name="currencySymbol" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ttl" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="DTag" representedClassName="DTag" syncable="YES" codeGenerationType="class">
@@ -18,8 +18,8 @@
         <relationship name="balances" toMany="YES" deletionRule="Nullify" destinationEntity="DBalance" inverseName="tags" inverseEntity="DBalance" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DSettings" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="DBalance" positionX="-36" positionY="9" width="128" height="105"/>
+        <element name="DSettings" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="DTag" positionX="-18" positionY="36" width="128" height="120"/>
     </elements>
 </model>
