@@ -3,8 +3,12 @@ import UIKit
 class VMovementsMenu:UIView
 {
     private weak var controller:CMovements!
+    private weak var viewType:VMovementsMenuType!
     private let kBackWidth:CGFloat = 50
     private let kBorderHeight:CGFloat = 1
+    private let kTypeWidth:CGFloat = 200
+    private let kTypeRight:CGFloat = -10
+    private let kTypeVertical:CGFloat = 5
     
     init(controller:CMovements)
     {
@@ -32,8 +36,12 @@ class VMovementsMenu:UIView
             action:#selector(actionBack(sender:)),
             for:UIControlEvents.touchUpInside)
         
+        let viewType:VMovementsMenuType = VMovementsMenuType(controller:controller)
+        self.viewType = viewType
+        
         addSubview(border)
         addSubview(backButton)
+        addSubview(viewType)
         
         NSLayoutConstraint.equalsVertical(
             view:backButton,
@@ -54,6 +62,18 @@ class VMovementsMenu:UIView
         NSLayoutConstraint.equalsHorizontal(
             view:border,
             toView:self)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:viewType,
+            toView:self,
+            margin:kTypeVertical)
+        NSLayoutConstraint.rightToRight(
+            view:viewType,
+            toView:self,
+            constant:kTypeRight)
+        NSLayoutConstraint.width(
+            view:viewType,
+            constant:kTypeWidth)
     }
     
     required init?(coder:NSCoder)
