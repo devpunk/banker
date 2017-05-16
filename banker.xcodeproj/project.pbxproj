@@ -29,7 +29,6 @@
 		DAA0D4F11ECA2515007EDAE5 /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4C31ECA2515007EDAE5 /* ExtensionUIColor.swift */; };
 		DAA0D4F21ECA2515007EDAE5 /* ExtensionUIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4C41ECA2515007EDAE5 /* ExtensionUIFont.swift */; };
 		DAA0D4F31ECA2515007EDAE5 /* ExtensionURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4C51ECA2515007EDAE5 /* ExtensionURL.swift */; };
-		DAA0D4F41ECA2515007EDAE5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4C61ECA2515007EDAE5 /* Info.plist */; };
 		DAA0D4F51ECA2515007EDAE5 /* MHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4C91ECA2515007EDAE5 /* MHome.swift */; };
 		DAA0D4F61ECA2515007EDAE5 /* MHomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4CA1ECA2515007EDAE5 /* MHomeProtocol.swift */; };
 		DAA0D4F71ECA2515007EDAE5 /* MSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4CC1ECA2515007EDAE5 /* MSession.swift */; };
@@ -417,7 +416,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA0D4F41ECA2515007EDAE5 /* Info.plist in Resources */,
 				DAA0D4F81ECA2515007EDAE5 /* Localizable.strings in Resources */,
 				DAA0D4F91ECA2515007EDAE5 /* ResourceURL.plist in Resources */,
 				DAA0D5111ECA506B007EDAE5 /* generic.xcassets in Resources */,
