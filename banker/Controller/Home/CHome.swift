@@ -22,4 +22,14 @@ class CHome:CController
         self.viewHome = viewHome
         view = viewHome
     }
+    
+    //MARK: public
+    
+    func openMovements()
+    {
+        let controllerMovements:CMovements = CMovements()
+        parentController.push(
+            controller:controllerMovements,
+            horizontal:CParent.TransitionHorizontal.fromRight)
+    }
 }

@@ -12,6 +12,6 @@ class MHomeMovement:MHomeProtocol
     
     func selected(controller:CHome)
     {
-        
+        controller.openMovements()
     }
 }
