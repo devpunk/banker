@@ -38,6 +38,15 @@ class MKeyboard
     
     init(editing:String?)
     {
+        if let currency:String = MSession.sharedInstance.settings?.currency()
+        {
+            self.currency = currency
+        }
+        else
+        {
+            currency = kEmpty
+        }
+        
         var cols:Int = 0
         var rows:[[MKeyboardProtocol]] = []
         
@@ -66,7 +75,7 @@ class MKeyboard
         }
         else
         {
-            self.editing = kInitial
+            self.editing = "\(currency)\(kInitial)"
         }
         
         numberFormatter = NumberFormatter()
@@ -81,9 +90,11 @@ class MKeyboard
     
     func currentValue() -> Double
     {
+        let stripped:String = editing.replacingOccurrences(of:currency, with:kEmpty)
+        
         guard
             
-            let number:NSNumber = numberFormatter.number(from:editing)
+            let number:NSNumber = numberFormatter.number(from:stripped)
             
         else
         {
