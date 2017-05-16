@@ -10,9 +10,7 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
     private let kInterLine:CGFloat = 1
     private let kDeselectTime:TimeInterval = 0.07
     
-    init(
-        textView:UITextView,
-        model:MKeyboard?)
+    init(textView:UITextView, model:MKeyboard?)
     {
         self.model = MKeyboard(editing:model?.editing)
         
@@ -21,7 +19,7 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
         let height:CGFloat = screenSize.height
         let initial:String = textView.text
         
-        let countRows:CGFloat = CGFloat(model.rows.count)
+        let countRows:CGFloat = CGFloat(self.model.rows.count)
         let interLines:CGFloat = kInterLine * (countRows + 1)
         let rowsHeight:CGFloat = kRowHeight * countRows
         keyboardHeight = interLines + rowsHeight
@@ -42,7 +40,7 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
         
         if let flow:VCollectionFlow = collectionView.collectionViewLayout as? VCollectionFlow
         {
-            let cols:CGFloat = CGFloat(model.cols)
+            let cols:CGFloat = CGFloat(self.model.cols)
             let colsLines:CGFloat = (cols + 1) * kInterLine
             let usableWidth:CGFloat = width - colsLines
             let cellWidth:CGFloat = usableWidth / cols
@@ -60,7 +58,7 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
         
         if textView.text.isEmpty
         {
-            let startingText:String = model.lastString()
+            let startingText:String = self.model.editing
             textView.insertText(startingText)
         }
     }
@@ -71,7 +69,7 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
     }
     
     override var intrinsicContentSize:CGSize
-        {
+    {
         get
         {
             let size:CGSize = CGSize(
@@ -84,9 +82,9 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
     
     //MARK: private
     
-    private func modelAtIndex(index:IndexPath) -> MKeyboardRowItem
+    private func modelAtIndex(index:IndexPath) -> MKeyboardProtocol
     {
-        let item:MKeyboardRowItem = model.rows[index.section].items[index.item]
+        let item:MKeyboardProtocol = model.rows[index.section][index.item]
         
         return item
     }
@@ -171,14 +169,14 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
     
     func collectionView(_ collectionView:UICollectionView, numberOfItemsInSection section:Int) -> Int
     {
-        let count:Int = model.rows[section].items.count
+        let count:Int = model.rows[section].count
         
         return count
     }
     
     func collectionView(_ collectionView:UICollectionView, cellForItemAt indexPath:IndexPath) -> UICollectionViewCell
     {
-        let item:MKeyboardRowItem = modelAtIndex(index:indexPath)
+        let item:MKeyboardProtocol = modelAtIndex(index:indexPath)
         let cell:VKeyboardCell = collectionView.dequeueReusableCell(
             withReuseIdentifier:VKeyboardCell.reusableIdentifier,
             for:indexPath) as! VKeyboardCell
@@ -193,12 +191,12 @@ class VKeyboard:UIView, UICollectionViewDelegate, UICollectionViewDataSource, UI
             
             let textView:UITextView = self.textView
             
-            else
+        else
         {
             return
         }
         
-        let item:MKeyboardRowItem = modelAtIndex(index:indexPath)
+        let item:MKeyboardProtocol = modelAtIndex(index:indexPath)
         item.selected(
             model:model,
             view:textView)

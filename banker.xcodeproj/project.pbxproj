@@ -10,6 +10,7 @@
 		DA60E87B1ECB44400025A558 /* MKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87A1ECB44400025A558 /* MKeyboard.swift */; };
 		DA60E87D1ECB46160025A558 /* MKeyboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */; };
 		DA60E8801ECB4DC70025A558 /* VKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */; };
+		DA60E8821ECB51B60025A558 /* VKeyboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E8811ECB51B60025A558 /* VKeyboardCell.swift */; };
 		DAA0D4E11ECA2515007EDAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */; };
 		DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B01ECA2515007EDAE5 /* CHome.swift */; };
 		DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B21ECA2515007EDAE5 /* CAppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		DA60E87A1ECB44400025A558 /* MKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboard.swift; sourceTree = "<group>"; };
 		DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardProtocol.swift; sourceTree = "<group>"; };
 		DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKeyboard.swift; sourceTree = "<group>"; };
+		DA60E8811ECB51B60025A558 /* VKeyboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKeyboardCell.swift; sourceTree = "<group>"; };
 		DA83A82D1ECA24A6002AE72D /* banker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA0D4B01ECA2515007EDAE5 /* CHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHome.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */,
+				DA60E8811ECB51B60025A558 /* VKeyboardCell.swift */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				DAA0D4FE1ECA2515007EDAE5 /* VBlur.swift in Sources */,
 				DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */,
 				DAA0D4FF1ECA2515007EDAE5 /* VBorder.swift in Sources */,
+				DA60E8821ECB51B60025A558 /* VKeyboardCell.swift in Sources */,
 				DAA0D5091ECA2697007EDAE5 /* DBanker.xcdatamodeld in Sources */,
 				DAA0D4E41ECA2515007EDAE5 /* CController.swift in Sources */,
 				DAA0D4E91ECA2515007EDAE5 /* ExtensionDictionary.swift in Sources */,
