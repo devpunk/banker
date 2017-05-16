@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA51235E1ECB82BF00EA5E57 /* MKeyboardDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51235D1ECB82BF00EA5E57 /* MKeyboardDot.swift */; };
 		DA60E87B1ECB44400025A558 /* MKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87A1ECB44400025A558 /* MKeyboard.swift */; };
 		DA60E87D1ECB46160025A558 /* MKeyboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */; };
 		DA60E8801ECB4DC70025A558 /* VKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */; };
@@ -76,6 +77,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA51235D1ECB82BF00EA5E57 /* MKeyboardDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardDot.swift; sourceTree = "<group>"; };
 		DA60E87A1ECB44400025A558 /* MKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboard.swift; sourceTree = "<group>"; };
 		DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardProtocol.swift; sourceTree = "<group>"; };
 		DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKeyboard.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				DA60E89D1ECB61950025A558 /* MKeyboardNumber8.swift */,
 				DA60E89F1ECB619D0025A558 /* MKeyboardNumber9.swift */,
 				DA60E8A11ECB7E280025A558 /* MKeyboardBackspace.swift */,
+				DA51235D1ECB82BF00EA5E57 /* MKeyboardDot.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				DAA0D5151ECA6BC4007EDAE5 /* MHomeBudgets.swift in Sources */,
 				DA60E88A1ECB5D670025A558 /* MKeyboardNumber.swift in Sources */,
 				DAA0D4EA1ECA2515007EDAE5 /* ExtensionFileManager.swift in Sources */,
+				DA51235E1ECB82BF00EA5E57 /* MKeyboardDot.swift in Sources */,
 				DAA0D4FA1ECA2515007EDAE5 /* VHome.swift in Sources */,
 				DAA0D4E51ECA2515007EDAE5 /* CParent.swift in Sources */,
 				DAA0D5031ECA2515007EDAE5 /* VParentPushBackground.swift in Sources */,
