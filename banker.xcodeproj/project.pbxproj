@@ -34,6 +34,7 @@
 		DA60E8A21ECB7E280025A558 /* MKeyboardBackspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E8A11ECB7E280025A558 /* MKeyboardBackspace.swift */; };
 		DA613AA11ECCD1FE0017CB1C /* CMovementsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA01ECCD1FE0017CB1C /* CMovementsInfo.swift */; };
 		DA613AA41ECCD2460017CB1C /* VMovementsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA31ECCD2460017CB1C /* VMovementsInfo.swift */; };
+		DA613AA71ECD0B840017CB1C /* CTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA61ECD0B840017CB1C /* CTags.swift */; };
 		DAA0D4E11ECA2515007EDAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */; };
 		DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B01ECA2515007EDAE5 /* CHome.swift */; };
 		DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B21ECA2515007EDAE5 /* CAppDelegate.swift */; };
@@ -111,6 +112,7 @@
 		DA60E8A11ECB7E280025A558 /* MKeyboardBackspace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardBackspace.swift; sourceTree = "<group>"; };
 		DA613AA01ECCD1FE0017CB1C /* CMovementsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMovementsInfo.swift; sourceTree = "<group>"; };
 		DA613AA31ECCD2460017CB1C /* VMovementsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovementsInfo.swift; sourceTree = "<group>"; };
+		DA613AA61ECD0B840017CB1C /* CTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTags.swift; sourceTree = "<group>"; };
 		DA83A82D1ECA24A6002AE72D /* banker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA0D4B01ECA2515007EDAE5 /* CHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHome.swift; sourceTree = "<group>"; };
@@ -228,6 +230,14 @@
 			path = MovementsInfo;
 			sourceTree = "<group>";
 		};
+		DA613AA51ECD0B760017CB1C /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				DA613AA61ECD0B840017CB1C /* CTags.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
 		DA83A8241ECA24A6002AE72D = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +282,7 @@
 		DAA0D4AE1ECA2515007EDAE5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DA613AA51ECD0B760017CB1C /* Tags */,
 				DAA0D51C1ECA7894007EDAE5 /* Movements */,
 				DAA0D4AF1ECA2515007EDAE5 /* Home */,
 				DAA0D4B11ECA2515007EDAE5 /* Main */,
@@ -509,6 +520,7 @@
 				DAA0D4E61ECA2515007EDAE5 /* DManager.swift in Sources */,
 				DAA0D4F71ECA2515007EDAE5 /* MSession.swift in Sources */,
 				DAA0D4E71ECA2515007EDAE5 /* DSettingsExtension.swift in Sources */,
+				DA613AA71ECD0B840017CB1C /* CTags.swift in Sources */,
 				DA5123641ECB8DD700EA5E57 /* VMovementsMenuTypeItem.swift in Sources */,
 				DAA0D4FB1ECA2515007EDAE5 /* VHomeBar.swift in Sources */,
 				DA60E8961ECB61780025A558 /* MKeyboardNumber4.swift in Sources */,
