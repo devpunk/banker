@@ -33,6 +33,7 @@
 		DA60E8A01ECB619D0025A558 /* MKeyboardNumber9.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E89F1ECB619D0025A558 /* MKeyboardNumber9.swift */; };
 		DA60E8A21ECB7E280025A558 /* MKeyboardBackspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E8A11ECB7E280025A558 /* MKeyboardBackspace.swift */; };
 		DA613AA11ECCD1FE0017CB1C /* CMovementsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA01ECCD1FE0017CB1C /* CMovementsInfo.swift */; };
+		DA613AA41ECCD2460017CB1C /* VMovementsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA31ECCD2460017CB1C /* VMovementsInfo.swift */; };
 		DAA0D4E11ECA2515007EDAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */; };
 		DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B01ECA2515007EDAE5 /* CHome.swift */; };
 		DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B21ECA2515007EDAE5 /* CAppDelegate.swift */; };
@@ -109,6 +110,7 @@
 		DA60E89F1ECB619D0025A558 /* MKeyboardNumber9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardNumber9.swift; sourceTree = "<group>"; };
 		DA60E8A11ECB7E280025A558 /* MKeyboardBackspace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardBackspace.swift; sourceTree = "<group>"; };
 		DA613AA01ECCD1FE0017CB1C /* CMovementsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMovementsInfo.swift; sourceTree = "<group>"; };
+		DA613AA31ECCD2460017CB1C /* VMovementsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovementsInfo.swift; sourceTree = "<group>"; };
 		DA83A82D1ECA24A6002AE72D /* banker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA0D4B01ECA2515007EDAE5 /* CHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHome.swift; sourceTree = "<group>"; };
@@ -216,6 +218,14 @@
 				DA60E8811ECB51B60025A558 /* VKeyboardCell.swift */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		DA613AA21ECCD23B0017CB1C /* MovementsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DA613AA31ECCD2460017CB1C /* VMovementsInfo.swift */,
+			);
+			path = MovementsInfo;
 			sourceTree = "<group>";
 		};
 		DA83A8241ECA24A6002AE72D = {
@@ -360,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				DA60E87E1ECB4DAC0025A558 /* Keyboard */,
+				DA613AA21ECCD23B0017CB1C /* MovementsInfo */,
 				DAA0D51F1ECA7916007EDAE5 /* Movements */,
 				DAA0D4D21ECA2515007EDAE5 /* Home */,
 				DAA0D4D61ECA2515007EDAE5 /* Main */,
@@ -549,6 +560,7 @@
 				DAA0D4ED1ECA2515007EDAE5 /* ExtensionNSLayoutConstraint.swift in Sources */,
 				DA60E8921ECB61670025A558 /* MKeyboardNumber2.swift in Sources */,
 				DA60E88E1ECB615A0025A558 /* MKeyboardNumber0.swift in Sources */,
+				DA613AA41ECCD2460017CB1C /* VMovementsInfo.swift in Sources */,
 				DA60E87D1ECB46160025A558 /* MKeyboardProtocol.swift in Sources */,
 				DA613AA11ECCD1FE0017CB1C /* CMovementsInfo.swift in Sources */,
 				DA60E89C1ECB618F0025A558 /* MKeyboardNumber7.swift in Sources */,
