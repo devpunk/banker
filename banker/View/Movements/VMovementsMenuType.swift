@@ -10,7 +10,7 @@ class VMovementsMenuType:UIView
     private let kItemMultiplier:CGFloat = 0.5
     private let kIndicatorMultiplier:CGFloat = 0.5
     private let kBackgroundMargin:CGFloat = 1
-    private let kAnimationDuration:TimeInterval = 0.3
+    private let kAnimationDuration:TimeInterval = 0.4
     
     init(controller:CMovements)
     {
@@ -24,10 +24,18 @@ class VMovementsMenuType:UIView
         
         let itemDeposit:VMovementsMenuTypeItem = VMovementsMenuTypeItem(
             title:NSLocalizedString("VMovementsMenuType_itemDeposit", comment:""))
+        itemDeposit.addTarget(
+            self,
+            action:#selector(actionDeposit(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.itemDeposit = itemDeposit
         
         let itemExpense:VMovementsMenuTypeItem = VMovementsMenuTypeItem(
             title:NSLocalizedString("VMovementsMenuType_itemExpense", comment:""))
+        itemExpense.addTarget(
+            self,
+            action:#selector(actionExpense(sender:)),
+            for:UIControlEvents.touchUpInside)
         self.itemExpense = itemExpense
         
         let viewIndicator:VMovementsMenuTypeIndicator = VMovementsMenuTypeIndicator()
@@ -91,22 +99,34 @@ class VMovementsMenuType:UIView
             
             if deposit
             {
-                self?.indicatorRight(animated:false)
+                self?.indicatorDeposit(animated:false)
             }
             else
             {
-                self?.indicatorLeft(animated:false)
+                self?.indicatorExpense(animated:false)
             }
         }
         
         super.layoutSubviews()
     }
     
-    //MARK
+    //MARK: actions
+    
+    func actionExpense(sender button:UIButton)
+    {
+        controller.isDeposit = false
+        indicatorExpense(animated:true)
+    }
+    
+    func actionDeposit(sender button:UIButton)
+    {
+        controller.isDeposit = true
+        indicatorDeposit(animated:true)
+    }
     
     //MARK: private
     
-    private func indicatorLeft(animated:Bool)
+    private func indicatorExpense(animated:Bool)
     {
         itemDeposit.isSelected = false
         itemExpense.isSelected = true
@@ -131,7 +151,7 @@ class VMovementsMenuType:UIView
         }
     }
     
-    private func indicatorRight(animated:Bool)
+    private func indicatorDeposit(animated:Bool)
     {
         itemDeposit.isSelected = true
         itemExpense.isSelected = false

@@ -9,7 +9,7 @@ class VMovementsMenuTypeItem:UIButton
         clipsToBounds = true
         setTitle(title, for:UIControlState.normal)
         setTitleColor(
-            UIColor.white,
+            UIColor.bankerOrange,
             for:UIControlState.highlighted)
         setTitleColor(
             UIColor.white,
