@@ -63,6 +63,15 @@ class CMovements:CController
     
     func next()
     {
-        let value:Double = viewMovements.view
+        guard
+        
+            let keyboard:VKeyboard = viewMovements.viewField.inputView as? VKeyboard
+        
+        else
+        {
+            return
+        }
+        
+        let value:Double = keyboard.model.currentValue()
     }
 }

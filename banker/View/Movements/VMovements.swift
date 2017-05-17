@@ -2,8 +2,8 @@ import UIKit
 
 class VMovements:VView
 {
+    private(set) weak var viewField:VMovementsField!
     private weak var controller:CMovements!
-    private weak var viewField:VMovementsField!
     private weak var viewMenu:VMovementsMenu!
     private let kFieldHeight:CGFloat = 75
     private let kFieldTop:CGFloat = 20
