@@ -9,7 +9,7 @@ class VMovements:VView
     private let kFieldMaxHeight:CGFloat = 120
     private let kFieldMinHeight:CGFloat = 60
     private let kFieldTop:CGFloat = 20
-    private let kMenuHeight:CGFloat = 60
+    private let kMenuHeight:CGFloat = 46
     private let kAnimationDuration:TimeInterval = 0.1
     
     override init(controller:CController)

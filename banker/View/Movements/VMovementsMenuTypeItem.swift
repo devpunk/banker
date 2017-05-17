@@ -17,7 +17,7 @@ class VMovementsMenuTypeItem:UIButton
         setTitleColor(
             UIColor.bankerBlue,
             for:UIControlState.normal)
-        titleLabel!.font = UIFont.regular(size:14)
+        titleLabel!.font = UIFont.bold(size:14)
     }
     
     required init?(coder:NSCoder)

@@ -42,7 +42,7 @@ class VMovementsMenuType:UIView
         NSLayoutConstraint.width(
             view:viewIndicator,
             toView:self,
-            multiplier:0.65)
+            multiplier:kIndicatorMultiplier)
         
         NSLayoutConstraint.equalsVertical(
             view:itemExpense,
