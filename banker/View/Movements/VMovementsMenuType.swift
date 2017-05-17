@@ -7,6 +7,7 @@ class VMovementsMenuType:UIView
     private weak var itemExpense:VMovementsMenuTypeItem!
     private weak var viewIndicator:VMovementsMenuTypeIndicator!
     private weak var layoutIndicatorLeft:NSLayoutConstraint!
+    private var gestureInitialX:CGFloat?
     private let kItemMultiplier:CGFloat = 0.5
     private let kIndicatorMultiplier:CGFloat = 0.5
     private let kBackgroundMargin:CGFloat = 1
@@ -131,10 +132,47 @@ class VMovementsMenuType:UIView
     
     func actionPanning(sender panGesture:UIPanGestureRecognizer)
     {
-        
+        switch panGesture.state
+        {
+        case UIGestureRecognizerState.began:
+            
+            gestureBegan(gesture:panGesture)
+            
+            break
+            
+        case UIGestureRecognizerState.possible,
+             UIGestureRecognizerState.changed:
+            
+            gestureMoving(gesture:panGesture)
+            
+            break
+            
+        case UIGestureRecognizerState.cancelled,
+             UIGestureRecognizerState.ended,
+             UIGestureRecognizerState.failed:
+            
+            gestureEnded(gesture:panGesture)
+            
+            break
+        }
     }
     
     //MARK: private
+    
+    private func gestureBegan(gesture:UIPanGestureRecognizer)
+    {
+        
+    }
+    
+    private func gestureMoving(gesture:UIPanGestureRecognizer)
+    {
+        
+    }
+    
+    private func gestureEnded(gesture:UIPanGestureRecognizer)
+    {
+        
+    }
     
     private func buttonDeposit()
     {
