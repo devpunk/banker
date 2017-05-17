@@ -9,7 +9,7 @@ class VMovementsMenuType:UIView
     private weak var layoutIndicatorLeft:NSLayoutConstraint!
     private let kItemMultiplier:CGFloat = 0.5
     private let kIndicatorMultiplier:CGFloat = 0.55
-    private let kBorderWidth:CGFloat = 1
+    private let kBackgroundMargin:CGFloat = 1
     
     init(controller:CMovements)
     {
@@ -17,9 +17,9 @@ class VMovementsMenuType:UIView
         clipsToBounds = true
         backgroundColor = UIColor.clear
         translatesAutoresizingMaskIntoConstraints = false
-        layer.borderWidth = kBorderWidth
-        layer.borderColor = UIColor.bankerGray.cgColor
         self.controller = controller
+        
+        let viewBackground:VMovementsMenuTypeBackground = VMovementsMenuTypeBackground()
         
         let itemDeposit:VMovementsMenuTypeItem = VMovementsMenuTypeItem(
             title:NSLocalizedString("VMovementsMenuType_itemDeposit", comment:""))
@@ -32,9 +32,15 @@ class VMovementsMenuType:UIView
         let viewIndicator:VMovementsMenuTypeIndicator = VMovementsMenuTypeIndicator()
         self.viewIndicator = viewIndicator
         
+        addSubview(viewBackground)
         addSubview(viewIndicator)
         addSubview(itemExpense)
         addSubview(itemDeposit)
+        
+        NSLayoutConstraint.equals(
+            view:viewBackground,
+            toView:self,
+            margin:kBackgroundMargin)
         
         NSLayoutConstraint.equalsVertical(
             view:viewIndicator,
@@ -73,14 +79,5 @@ class VMovementsMenuType:UIView
     required init?(coder:NSCoder)
     {
         return nil
-    }
-    
-    override func layoutSubviews()
-    {
-        let height:CGFloat = bounds.maxY
-        let height_2:CGFloat = height / 2.0
-        layer.cornerRadius = height_2
-        
-        super.layoutSubviews()
     }
 }

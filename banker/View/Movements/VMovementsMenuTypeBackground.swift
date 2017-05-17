@@ -1,9 +1,31 @@
-//
-//  VMovementsMenuTypeBackground.swift
-//  banker
-//
-//  Created by zero on 5/16/17.
-//  Copyright © 2017 iturbide. All rights reserved.
-//
+import UIKit
 
-import Foundation
+class VMovementsMenuTypeBackground:UIView
+{
+    private let kBorderWidth:CGFloat = 1
+    
+    init()
+    {
+        super.init(frame:CGRect.zero)
+        clipsToBounds = true
+        backgroundColor = UIColor.clear
+        translatesAutoresizingMaskIntoConstraints = false
+        isUserInteractionEnabled = false
+        layer.borderWidth = kBorderWidth
+        layer.borderColor = UIColor.bankerGray.cgColor
+    }
+    
+    required init?(coder:NSCoder)
+    {
+        return nil
+    }
+    
+    override func layoutSubviews()
+    {
+        let height:CGFloat = bounds.maxY
+        let height_2:CGFloat = height / 2.0
+        layer.cornerRadius = height_2
+        
+        super.layoutSubviews()
+    }
+}
