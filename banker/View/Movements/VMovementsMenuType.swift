@@ -82,7 +82,7 @@ class VMovementsMenuType:UIView
         return nil
     }
     
-    override func layoutIfNeeded()
+    override func layoutSubviews()
     {
         let deposit:Bool = controller.isDeposit
         
@@ -99,7 +99,7 @@ class VMovementsMenuType:UIView
             }
         }
         
-        super.layoutIfNeeded()
+        super.layoutSubviews()
     }
     
     //MARK
