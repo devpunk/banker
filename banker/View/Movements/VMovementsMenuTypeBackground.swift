@@ -12,7 +12,7 @@ class VMovementsMenuTypeBackground:UIView
         translatesAutoresizingMaskIntoConstraints = false
         isUserInteractionEnabled = false
         layer.borderWidth = kBorderWidth
-        layer.borderColor = UIColor.bankerGray.cgColor
+        layer.borderColor = UIColor.bankerBlue.cgColor
     }
     
     required init?(coder:NSCoder)

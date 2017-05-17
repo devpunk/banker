@@ -8,8 +8,9 @@ class VMovementsMenuType:UIView
     private weak var viewIndicator:VMovementsMenuTypeIndicator!
     private weak var layoutIndicatorLeft:NSLayoutConstraint!
     private let kItemMultiplier:CGFloat = 0.5
-    private let kIndicatorMultiplier:CGFloat = 0.55
+    private let kIndicatorMultiplier:CGFloat = 0.5
     private let kBackgroundMargin:CGFloat = 1
+    private let kAnimationDuration:TimeInterval = 0.3
     
     init(controller:CMovements)
     {
@@ -79,5 +80,79 @@ class VMovementsMenuType:UIView
     required init?(coder:NSCoder)
     {
         return nil
+    }
+    
+    override func layoutIfNeeded()
+    {
+        let deposit:Bool = controller.isDeposit
+        
+        DispatchQueue.main.async
+        { [weak self] in
+            
+            if deposit
+            {
+                self?.indicatorRight(animated:false)
+            }
+            else
+            {
+                self?.indicatorLeft(animated:false)
+            }
+        }
+        
+        super.layoutIfNeeded()
+    }
+    
+    //MARK
+    
+    //MARK: private
+    
+    private func indicatorLeft(animated:Bool)
+    {
+        itemDeposit.isSelected = false
+        itemExpense.isSelected = true
+        
+        let duration:TimeInterval
+        
+        if animated
+        {
+            duration = kAnimationDuration
+        }
+        else
+        {
+            duration = 0
+        }
+        
+        layoutIndicatorLeft.constant = 0
+        
+        UIView.animate(withDuration:duration)
+        { [weak self] in
+            
+            self?.layoutIfNeeded()
+        }
+    }
+    
+    private func indicatorRight(animated:Bool)
+    {
+        itemDeposit.isSelected = true
+        itemExpense.isSelected = false
+        
+        let duration:TimeInterval
+        
+        if animated
+        {
+            duration = kAnimationDuration
+        }
+        else
+        {
+            duration = 0
+        }
+        
+        layoutIndicatorLeft.constant = bounds.midX
+        
+        UIView.animate(withDuration:duration)
+        { [weak self] in
+            
+            self?.layoutIfNeeded()
+        }
     }
 }

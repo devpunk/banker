@@ -6,7 +6,7 @@ class VMovementsMenu:UIView
     private weak var viewType:VMovementsMenuType!
     private let kBackWidth:CGFloat = 50
     private let kBorderHeight:CGFloat = 1
-    private let kTypeWidth:CGFloat = 210
+    private let kTypeWidth:CGFloat = 190
     private let kTypeRight:CGFloat = -10
     private let kTypeVertical:CGFloat = 6
     

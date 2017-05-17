@@ -2,7 +2,19 @@ import UIKit
 
 class CMovements:CController
 {
+    var isDeposit:Bool
     private weak var viewMovements:VMovements!
+    
+    override init()
+    {
+        isDeposit = true
+        super.init()
+    }
+    
+    required init?(coder:NSCoder)
+    {
+        return nil
+    }
     
     override func loadView()
     {
