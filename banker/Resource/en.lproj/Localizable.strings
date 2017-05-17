@@ -3,4 +3,4 @@
 "VMovementsMenuType_itemDeposit"="Deposit";
 "VMovementsMenu_nextButton"="Next";
 
-"CMovements_errorEmpty"="Can't add a movement of 0";
+"CMovements_errorEmpty"="Invalid quantity";

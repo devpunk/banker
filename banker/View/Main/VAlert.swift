@@ -2,13 +2,14 @@ import UIKit
 
 class VAlert:UIView
 {
-    private static let kHeight:CGFloat = 50
+    private static let kHeight:CGFloat = 65
     private weak var layoutTop:NSLayoutConstraint!
     private weak var timer:Timer?
     private let kAnimationDuration:TimeInterval = 0.3
-    private let kTimeOut:TimeInterval = 5
+    private let kTimeOut:TimeInterval = 3.5
     private let kFontSize:CGFloat = 15
     private let kLabelMargin:CGFloat = 9
+    private let kLabelTop:CGFloat = 20
     
     class func messageRed(message:String)
     {
@@ -75,7 +76,11 @@ class VAlert:UIView
         addSubview(label)
         addSubview(button)
         
-        NSLayoutConstraint.equalsVertical(
+        NSLayoutConstraint.topToTop(
+            view:label,
+            toView:self,
+            constant:kLabelTop)
+        NSLayoutConstraint.bottomToBottom(
             view:label,
             toView:self)
         NSLayoutConstraint.equalsHorizontal(
