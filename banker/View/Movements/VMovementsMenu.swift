@@ -6,9 +6,12 @@ class VMovementsMenu:UIView
     private weak var viewType:VMovementsMenuType!
     private let kBackWidth:CGFloat = 50
     private let kBorderHeight:CGFloat = 1
-    private let kTypeWidth:CGFloat = 196
-    private let kTypeRight:CGFloat = -10
+    private let kTypeWidth:CGFloat = 180
+    private let kTypeRight:CGFloat = -15
     private let kTypeVertical:CGFloat = 10
+    private let kNextWidth:CGFloat = 60
+    private let kNextRight:CGFloat = -10
+    private let kCornerRadius:CGFloat = 7
     
     init(controller:CMovements)
     {
@@ -36,12 +39,29 @@ class VMovementsMenu:UIView
             action:#selector(actionBack(sender:)),
             for:UIControlEvents.touchUpInside)
         
+        let nextButton:UIButton = UIButton()
+        nextButton.translatesAutoresizingMaskIntoConstraints = false
+        nextButton.clipsToBounds = true
+        nextButton.backgroundColor = UIColor.bankerBlue
+        nextButton.setTitleColor(
+            UIColor.white,
+            for:UIControlState.normal)
+        nextButton.setTitleColor(
+            UIColor(white:1, alpha:0.2),
+            for:UIControlState.highlighted)
+        nextButton.setTitle(
+            NSLocalizedString("VMovementsMenu_nextButton", comment:""),
+            for:UIControlState.normal)
+        nextButton.titleLabel!.font = UIFont.bold(size:14)
+        nextButton.layer.cornerRadius = kCornerRadius
+        
         let viewType:VMovementsMenuType = VMovementsMenuType(controller:controller)
         self.viewType = viewType
         
         addSubview(border)
         addSubview(backButton)
         addSubview(viewType)
+        addSubview(nextButton)
         
         NSLayoutConstraint.equalsVertical(
             view:backButton,
@@ -67,13 +87,25 @@ class VMovementsMenu:UIView
             view:viewType,
             toView:self,
             margin:kTypeVertical)
-        NSLayoutConstraint.rightToRight(
+        NSLayoutConstraint.rightToLeft(
             view:viewType,
-            toView:self,
+            toView:nextButton,
             constant:kTypeRight)
         NSLayoutConstraint.width(
             view:viewType,
             constant:kTypeWidth)
+        
+        NSLayoutConstraint.equalsVertical(
+            view:nextButton,
+            toView:self,
+            margin:kTypeVertical)
+        NSLayoutConstraint.rightToRight(
+            view:nextButton,
+            toView:self,
+            constant:kNextRight)
+        NSLayoutConstraint.width(
+            view:nextButton,
+            constant:kNextWidth)
     }
     
     required init?(coder:NSCoder)
