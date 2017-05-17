@@ -6,12 +6,12 @@ class VMovementsMenu:UIView
     private weak var viewType:VMovementsMenuType!
     private let kBackWidth:CGFloat = 50
     private let kBorderHeight:CGFloat = 1
-    private let kTypeWidth:CGFloat = 180
-    private let kTypeRight:CGFloat = -15
+    private let kTypeWidth:CGFloat = 170
+    private let kTypeRight:CGFloat = -20
     private let kTypeVertical:CGFloat = 10
-    private let kNextWidth:CGFloat = 60
+    private let kNextWidth:CGFloat = 70
     private let kNextRight:CGFloat = -10
-    private let kCornerRadius:CGFloat = 7
+    private let kCornerRadius:CGFloat = 5
     
     init(controller:CMovements)
     {
@@ -21,7 +21,7 @@ class VMovementsMenu:UIView
         translatesAutoresizingMaskIntoConstraints = false
         self.controller = controller
         
-        let border:VBorder = VBorder(color:UIColor.black)
+        let border:VBorder = VBorder(color:UIColor.bankerBlue)
         
         let backButton:UIButton = UIButton()
         backButton.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +42,7 @@ class VMovementsMenu:UIView
         let nextButton:UIButton = UIButton()
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         nextButton.clipsToBounds = true
-        nextButton.backgroundColor = UIColor.bankerBlue
+        nextButton.backgroundColor = UIColor.bankerOrange
         nextButton.setTitleColor(
             UIColor.white,
             for:UIControlState.normal)
@@ -59,9 +59,9 @@ class VMovementsMenu:UIView
         self.viewType = viewType
         
         addSubview(border)
-        addSubview(backButton)
         addSubview(viewType)
         addSubview(nextButton)
+        addSubview(backButton)
         
         NSLayoutConstraint.equalsVertical(
             view:backButton,
