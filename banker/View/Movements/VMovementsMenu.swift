@@ -54,6 +54,10 @@ class VMovementsMenu:UIView
             for:UIControlState.normal)
         nextButton.titleLabel!.font = UIFont.bold(size:14)
         nextButton.layer.cornerRadius = kCornerRadius
+        nextButton.addTarget(
+            self,
+            action:#selector(actionNext(sender:)),
+            for:UIControlEvents.touchUpInside)
         
         let viewType:VMovementsMenuType = VMovementsMenuType(controller:controller)
         self.viewType = viewType
@@ -118,5 +122,10 @@ class VMovementsMenu:UIView
     func actionBack(sender button:UIButton)
     {
         controller.back()
+    }
+    
+    func actionNext(sender button:UIButton)
+    {
+        controller.next()
     }
 }

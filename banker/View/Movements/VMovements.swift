@@ -50,16 +50,4 @@ class VMovements:VView
     {
         return nil
     }
-    
-    //MARK: public
-    
-    func viewAppeared()
-    {
-        let _:Bool = viewField.becomeFirstResponder()
-    }
-    
-    func orientationChange()
-    {
-        let _:Bool = viewField.becomeFirstResponder()
-    }
 }
