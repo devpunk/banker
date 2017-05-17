@@ -5,7 +5,7 @@ class VMovementsField:UITextView, UITextViewDelegate
     private weak var controller:CMovements!
     private let drawingOptions:NSStringDrawingOptions
     private let insetsHorizontal3:CGFloat
-    private let kFontSize:CGFloat = 40
+    private let kFontSize:CGFloat = 45
     private let kInsetsHorizontal:CGFloat = 5
     
     init(controller:CMovements)
