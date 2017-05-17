@@ -126,10 +126,21 @@ class VMovementsMenuType:UIView
     
     //MARK: private
     
-    private func indicatorExpense(animated:Bool)
+    private func buttonDeposit()
+    {
+        itemDeposit.isSelected = true
+        itemExpense.isSelected = false
+    }
+    
+    private func buttonExpense()
     {
         itemDeposit.isSelected = false
         itemExpense.isSelected = true
+    }
+    
+    private func indicatorExpense(animated:Bool)
+    {
+        buttonExpense()
         
         let duration:TimeInterval
         
@@ -153,8 +164,7 @@ class VMovementsMenuType:UIView
     
     private func indicatorDeposit(animated:Bool)
     {
-        itemDeposit.isSelected = true
-        itemExpense.isSelected = false
+        buttonDeposit()
         
         let duration:TimeInterval
         
