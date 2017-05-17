@@ -41,10 +41,15 @@ class VMovementsMenuType:UIView
         let viewIndicator:VMovementsMenuTypeIndicator = VMovementsMenuTypeIndicator()
         self.viewIndicator = viewIndicator
         
+        let panGesture:UIPanGestureRecognizer = UIPanGestureRecognizer(
+            target:self,
+            action:#selector(actionPanning(sender:)))
+        
         addSubview(viewBackground)
         addSubview(viewIndicator)
         addSubview(itemExpense)
         addSubview(itemDeposit)
+        addGestureRecognizer(panGesture)
         
         NSLayoutConstraint.equals(
             view:viewBackground,
@@ -122,6 +127,11 @@ class VMovementsMenuType:UIView
     {
         controller.isDeposit = true
         indicatorDeposit(animated:true)
+    }
+    
+    func actionPanning(sender panGesture:UIPanGestureRecognizer)
+    {
+        
     }
     
     //MARK: private
