@@ -1,6 +1,6 @@
 import UIKit
 
-class CMovementsData:CController
+class CMovementsInfo:CController
 {
     
 }
