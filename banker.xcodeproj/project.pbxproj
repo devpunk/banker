@@ -12,6 +12,7 @@
 		DA5123621ECB8BBA00EA5E57 /* VMovementsMenuType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5123611ECB8BBA00EA5E57 /* VMovementsMenuType.swift */; };
 		DA5123641ECB8DD700EA5E57 /* VMovementsMenuTypeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5123631ECB8DD700EA5E57 /* VMovementsMenuTypeItem.swift */; };
 		DA5123661ECBAF9A00EA5E57 /* VMovementsMenuTypeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5123651ECBAF9A00EA5E57 /* VMovementsMenuTypeIndicator.swift */; };
+		DA5123681ECBCDB500EA5E57 /* VMovementsMenuTypeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5123671ECBCDB500EA5E57 /* VMovementsMenuTypeBackground.swift */; };
 		DA60E87B1ECB44400025A558 /* MKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87A1ECB44400025A558 /* MKeyboard.swift */; };
 		DA60E87D1ECB46160025A558 /* MKeyboardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */; };
 		DA60E8801ECB4DC70025A558 /* VKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */; };
@@ -86,6 +87,7 @@
 		DA5123611ECB8BBA00EA5E57 /* VMovementsMenuType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovementsMenuType.swift; sourceTree = "<group>"; };
 		DA5123631ECB8DD700EA5E57 /* VMovementsMenuTypeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovementsMenuTypeItem.swift; sourceTree = "<group>"; };
 		DA5123651ECBAF9A00EA5E57 /* VMovementsMenuTypeIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovementsMenuTypeIndicator.swift; sourceTree = "<group>"; };
+		DA5123671ECBCDB500EA5E57 /* VMovementsMenuTypeBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovementsMenuTypeBackground.swift; sourceTree = "<group>"; };
 		DA60E87A1ECB44400025A558 /* MKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboard.swift; sourceTree = "<group>"; };
 		DA60E87C1ECB46160025A558 /* MKeyboardProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKeyboardProtocol.swift; sourceTree = "<group>"; };
 		DA60E87F1ECB4DC70025A558 /* VKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKeyboard.swift; sourceTree = "<group>"; };
@@ -410,6 +412,7 @@
 				DA5123611ECB8BBA00EA5E57 /* VMovementsMenuType.swift */,
 				DA5123631ECB8DD700EA5E57 /* VMovementsMenuTypeItem.swift */,
 				DA5123651ECBAF9A00EA5E57 /* VMovementsMenuTypeIndicator.swift */,
+				DA5123671ECBCDB500EA5E57 /* VMovementsMenuTypeBackground.swift */,
 			);
 			path = Movements;
 			sourceTree = "<group>";
@@ -550,6 +553,7 @@
 				DAA0D5001ECA2515007EDAE5 /* VCollection.swift in Sources */,
 				DAA0D5041ECA2515007EDAE5 /* VSpinner.swift in Sources */,
 				DAA0D5211ECA791F007EDAE5 /* VMovements.swift in Sources */,
+				DA5123681ECBCDB500EA5E57 /* VMovementsMenuTypeBackground.swift in Sources */,
 				DA60E89A1ECB61880025A558 /* MKeyboardNumber6.swift in Sources */,
 				DAA0D51B1ECA6CA0007EDAE5 /* MHomeCalendar.swift in Sources */,
 				DA5123621ECB8BBA00EA5E57 /* VMovementsMenuType.swift in Sources */,
