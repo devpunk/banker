@@ -5,7 +5,7 @@ class VMovements:VView
     private weak var controller:CMovements!
     private weak var viewField:VMovementsField!
     private weak var viewMenu:VMovementsMenu!
-    private let kFieldHeight:CGFloat = 70
+    private let kFieldHeight:CGFloat = 75
     private let kFieldTop:CGFloat = 20
     private let kMenuHeight:CGFloat = 52
     private let kAnimationDuration:TimeInterval = 0.1

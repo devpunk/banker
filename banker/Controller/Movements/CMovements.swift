@@ -36,6 +36,23 @@ class CMovements:CController
         parentController.statusBarAppareance(statusBarStyle:UIStatusBarStyle.lightContent)
     }
     
+    override func viewWillTransition(to size:CGSize, with coordinator:UIViewControllerTransitionCoordinator)
+    {
+        if parentController.childViewControllers.last === self
+        {
+            UIApplication.shared.keyWindow!.endEditing(true)
+            
+            coordinator.animate(alongsideTransition:
+            { (context:UIViewControllerTransitionCoordinatorContext) in
+                    
+            })
+            { [weak self] (context:UIViewControllerTransitionCoordinatorContext) in
+                
+                self?.viewMovements.orientationChange()
+            }
+        }
+    }
+    
     //MARK: public
     
     func back()
