@@ -35,6 +35,7 @@
 		DA613AA11ECCD1FE0017CB1C /* CMovementsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA01ECCD1FE0017CB1C /* CMovementsInfo.swift */; };
 		DA613AA41ECCD2460017CB1C /* VMovementsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA31ECCD2460017CB1C /* VMovementsInfo.swift */; };
 		DA613AA71ECD0B840017CB1C /* CTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA61ECD0B840017CB1C /* CTags.swift */; };
+		DA613AAA1ECD0C880017CB1C /* VTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA613AA91ECD0C880017CB1C /* VTags.swift */; };
 		DAA0D4E11ECA2515007EDAE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */; };
 		DAA0D4E21ECA2515007EDAE5 /* CHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B01ECA2515007EDAE5 /* CHome.swift */; };
 		DAA0D4E31ECA2515007EDAE5 /* CAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0D4B21ECA2515007EDAE5 /* CAppDelegate.swift */; };
@@ -113,6 +114,7 @@
 		DA613AA01ECCD1FE0017CB1C /* CMovementsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMovementsInfo.swift; sourceTree = "<group>"; };
 		DA613AA31ECCD2460017CB1C /* VMovementsInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VMovementsInfo.swift; sourceTree = "<group>"; };
 		DA613AA61ECD0B840017CB1C /* CTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTags.swift; sourceTree = "<group>"; };
+		DA613AA91ECD0C880017CB1C /* VTags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTags.swift; sourceTree = "<group>"; };
 		DA83A82D1ECA24A6002AE72D /* banker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = banker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA0D4AD1ECA2515007EDAE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA0D4B01ECA2515007EDAE5 /* CHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHome.swift; sourceTree = "<group>"; };
@@ -234,6 +236,14 @@
 			isa = PBXGroup;
 			children = (
 				DA613AA61ECD0B840017CB1C /* CTags.swift */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		DA613AA81ECD0C7E0017CB1C /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				DA613AA91ECD0C880017CB1C /* VTags.swift */,
 			);
 			path = Tags;
 			sourceTree = "<group>";
@@ -380,6 +390,7 @@
 		DAA0D4D11ECA2515007EDAE5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA613AA81ECD0C7E0017CB1C /* Tags */,
 				DA60E87E1ECB4DAC0025A558 /* Keyboard */,
 				DA613AA21ECCD23B0017CB1C /* MovementsInfo */,
 				DAA0D51F1ECA7916007EDAE5 /* Movements */,
@@ -582,6 +593,7 @@
 				DAA0D5041ECA2515007EDAE5 /* VSpinner.swift in Sources */,
 				DAA0D5211ECA791F007EDAE5 /* VMovements.swift in Sources */,
 				DA5123681ECBCDB500EA5E57 /* VMovementsMenuTypeBackground.swift in Sources */,
+				DA613AAA1ECD0C880017CB1C /* VTags.swift in Sources */,
 				DA60E89A1ECB61880025A558 /* MKeyboardNumber6.swift in Sources */,
 				DAA0D51B1ECA6CA0007EDAE5 /* MHomeCalendar.swift in Sources */,
 				DA5123621ECB8BBA00EA5E57 /* VMovementsMenuType.swift in Sources */,
