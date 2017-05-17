@@ -6,10 +6,9 @@ class VMovements:VView
     private weak var viewField:VMovementsField!
     private weak var viewMenu:VMovementsMenu!
     private weak var layoutFieldHeight:NSLayoutConstraint!
-    private let kFieldMaxHeight:CGFloat = 120
-    private let kFieldMinHeight:CGFloat = 60
+    private let kFieldHeight:CGFloat = 70
     private let kFieldTop:CGFloat = 20
-    private let kMenuHeight:CGFloat = 50
+    private let kMenuHeight:CGFloat = 52
     private let kAnimationDuration:TimeInterval = 0.1
     
     override init(controller:CController)

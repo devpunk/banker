@@ -7,7 +7,7 @@ class VMovementsMenuType:UIView
     private weak var itemExpense:VMovementsMenuTypeItem!
     private weak var viewIndicator:VMovementsMenuTypeIndicator!
     private weak var layoutIndicatorLeft:NSLayoutConstraint!
-    private var gestureInitialX:CGFloat?
+    private var gestureLastX:CGFloat?
     private let kItemMultiplier:CGFloat = 0.5
     private let kIndicatorMultiplier:CGFloat = 0.5
     private let kBackgroundMargin:CGFloat = 1
@@ -89,19 +89,13 @@ class VMovementsMenuType:UIView
             view:itemDeposit,
             toView:self,
             multiplier:kItemMultiplier)
-    }
-    
-    required init?(coder:NSCoder)
-    {
-        return nil
-    }
-    
-    override func layoutSubviews()
-    {
+        
         let deposit:Bool = controller.isDeposit
         
         DispatchQueue.main.async
         { [weak self] in
+            
+            self?.layoutIfNeeded()
             
             if deposit
             {
@@ -112,8 +106,11 @@ class VMovementsMenuType:UIView
                 self?.indicatorExpense(animated:false)
             }
         }
-        
-        super.layoutSubviews()
+    }
+    
+    required init?(coder:NSCoder)
+    {
+        return nil
     }
     
     //MARK: actions
@@ -159,19 +156,70 @@ class VMovementsMenuType:UIView
     
     //MARK: private
     
+    private func indicatorMaxX() -> CGFloat
+    {
+        return bounds.midX
+    }
+    
     private func gestureBegan(gesture:UIPanGestureRecognizer)
     {
-        
+        let location:CGPoint = gesture.location(in:self)
+        gestureLastX = location.x
     }
     
     private func gestureMoving(gesture:UIPanGestureRecognizer)
     {
+        guard
         
+            let gestureLastX:CGFloat = self.gestureLastX
+        
+        else
+        {
+            return
+        }
+        
+        let location:CGPoint = gesture.location(in:self)
+        let newX:CGFloat = location.x
+        let deltaX:CGFloat = newX - gestureLastX
+        let maxX:CGFloat = indicatorMaxX()
+        let midX:CGFloat = maxX / 2.0
+        var indicatorNewX:CGFloat = layoutIndicatorLeft.constant + deltaX
+        
+        if indicatorNewX < 0
+        {
+            indicatorNewX = 0
+        }
+        else if indicatorNewX > maxX
+        {
+            indicatorNewX = maxX
+        }
+        
+        if indicatorNewX > midX
+        {
+            buttonDeposit()
+        }
+        else
+        {
+            buttonExpense()
+        }
+        
+        layoutIndicatorLeft.constant = indicatorNewX
+        self.gestureLastX = newX
     }
     
     private func gestureEnded(gesture:UIPanGestureRecognizer)
     {
+        let maxX:CGFloat = indicatorMaxX()
+        let midX:CGFloat = maxX / 2.0
         
+        if layoutIndicatorLeft.constant > midX
+        {
+            indicatorDeposit(animated:true)
+        }
+        else
+        {
+            indicatorExpense(animated:true)
+        }
     }
     
     private func buttonDeposit()
@@ -225,7 +273,7 @@ class VMovementsMenuType:UIView
             duration = 0
         }
         
-        layoutIndicatorLeft.constant = bounds.midX
+        layoutIndicatorLeft.constant = indicatorMaxX()
         
         UIView.animate(withDuration:duration)
         { [weak self] in
