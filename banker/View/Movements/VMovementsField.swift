@@ -3,16 +3,12 @@ import UIKit
 class VMovementsField:UITextView, UITextViewDelegate
 {
     private weak var controller:CMovements!
-    private let drawingOptions:NSStringDrawingOptions
     private let insetsHorizontal3:CGFloat
     private let kFontSize:CGFloat = 45
     private let kInsetsHorizontal:CGFloat = 5
     
     init(controller:CMovements)
     {
-        drawingOptions = NSStringDrawingOptions([
-            NSStringDrawingOptions.usesLineFragmentOrigin,
-            NSStringDrawingOptions.usesFontLeading])
         insetsHorizontal3 = kInsetsHorizontal + kInsetsHorizontal + kInsetsHorizontal
         
         super.init(frame:CGRect.zero, textContainer:nil)
@@ -35,19 +31,17 @@ class VMovementsField:UITextView, UITextViewDelegate
         contentInset = UIEdgeInsets.zero
         textAlignment = NSTextAlignment.right
         font = UIFont.numeric(size:kFontSize)
+        textContainerInset = UIEdgeInsets(
+            top:0,
+            left:kInsetsHorizontal,
+            bottom:0,
+            right:kInsetsHorizontal)
         self.controller = controller
     }
     
     required init?(coder:NSCoder)
     {
         return nil
-    }
-    
-    override func layoutSubviews()
-    {
-        updateInsets()
-        
-        super.layoutSubviews()
     }
     
     override func becomeFirstResponder() -> Bool
@@ -67,40 +61,5 @@ class VMovementsField:UITextView, UITextViewDelegate
         inputView = fieldInput
         
         return super.becomeFirstResponder()
-    }
-    
-    //MARK: private
-    
-    private func updateInsets()
-    {
-        let width:CGFloat = bounds.maxX
-        let height:CGFloat = bounds.maxY
-        let usableWidth:CGFloat = width - insetsHorizontal3
-        let usableHeight:CGFloat = height - kInsetsHorizontal
-        let usableSize:CGSize = CGSize(width:usableWidth, height:usableHeight)
-        let boundingRect:CGRect = attributedText.boundingRect(
-            with:usableSize,
-            options:drawingOptions,
-            context:nil)
-        let textHeight:CGFloat = ceil(boundingRect.maxY)
-        var insetsTop:CGFloat = usableHeight - textHeight
-        
-        if insetsTop < 0
-        {
-            insetsTop = 0
-        }
-        
-        textContainerInset = UIEdgeInsets(
-            top:insetsTop,
-            left:kInsetsHorizontal,
-            bottom:0,
-            right:kInsetsHorizontal)
-    }
-    
-    //MARK: textView delegate
-    
-    func textViewDidChange(_ textView:UITextView)
-    {
-        updateInsets()
     }
 }

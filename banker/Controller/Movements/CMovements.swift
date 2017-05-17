@@ -60,4 +60,9 @@ class CMovements:CController
         UIApplication.shared.keyWindow!.endEditing(true)
         parentController.pop(horizontal:CParent.TransitionHorizontal.fromRight)
     }
+    
+    func next()
+    {
+        let value:Double = viewMovements.view
+    }
 }
