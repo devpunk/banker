@@ -117,13 +117,11 @@ class VMovementsMenuType:UIView
     
     func actionExpense(sender button:UIButton)
     {
-        controller.isDeposit = false
         indicatorExpense(animated:true)
     }
     
     func actionDeposit(sender button:UIButton)
     {
-        controller.isDeposit = true
         indicatorDeposit(animated:true)
     }
     
@@ -236,6 +234,7 @@ class VMovementsMenuType:UIView
     
     private func indicatorExpense(animated:Bool)
     {
+        controller.isDeposit = false
         buttonExpense()
         
         let duration:TimeInterval
@@ -260,6 +259,7 @@ class VMovementsMenuType:UIView
     
     private func indicatorDeposit(animated:Bool)
     {
+        controller.isDeposit = true
         buttonDeposit()
         
         let duration:TimeInterval
